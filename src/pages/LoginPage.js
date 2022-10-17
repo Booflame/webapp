@@ -1,7 +1,8 @@
 export default function LoginPage(){
     return(
         <section>
-            <h1>halløj</h1>
+            <label htmlFor="Email" name="email">Email</label>
+            <input id="Email" type="email" />
         </section>
     )
 }
