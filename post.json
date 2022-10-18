@@ -10,10 +10,40 @@
         "age": 24,
         "cool": false,
         "xd": "xd",
-        "time": {
+        "who": {
+            "mig": true,
+            "partner": true,
+            "venner": true
+        },
+        "hvor": {
+            "hjemme": true,
+            "ude": true,
+            "begge": true
+        },
+        "tid": {
             "dag": true,
             "aften": true,
             "heledagen": true
-        }
+        },
+        "budget": "$",
+    },
+    {
+        "name": "Biograftur",
+        "who": {
+            "mig": false,
+            "partner": true,
+            "venner": true
+        },
+        "hvor": {
+            "hjemme": false,
+            "ude": true,
+            "begge": false
+        },
+        "tid": {
+            "dag": true,
+            "aften": true,
+            "heledagen": true
+        },
+        "budget": "$$"
     }
 ]
