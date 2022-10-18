@@ -1,0 +1,55 @@
+button {
+  border: none;
+  cursor: pointer;
+}
+
+:root {
+  --_hue: 240;
+  --_size: 2.2rem;
+  --_raidues: 0.2em;
+  --_tspeed_fast: 150ms;
+  --_tspeed_slow: 400ms;
+  --_ttype_squish: cubic-bezier(0.86, -0.1, 0.27, 1.15);
+
+  --bg--light: var(--_hue) 30% 94%;
+  --txt--light: var(--_hue) 40% 5%;
+  --accent--light: var(--_hue) 55% 50%;
+  --muted--light: var(--_hue) 30% 99%;
+
+  --bg--dark: var(--_hue) 15% 10%;
+  --txt--dark: var(--_hue) 30% 88%;
+  --accent--dark: var(--_hue) 50% 50%;
+  --muted--dark: var(--_hue) 20% 4%;
+
+  --bg: var(--bg--light);
+  --txt: var(--txt--light);
+  --accent: var(--accent--light);
+  --muted: var(--muted--light);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--bg--dark);
+    --txt: var(--txt--dark);
+    --accent: var(--accent--dark);
+    --muted: var(--muted--dark);
+    color-scheme: dark;
+  }
+}
+.container {
+  background-color: hsl(--bg);
+  border: 3px solid red;
+  padding: 10px;
+  gap: 1.5vmax;
+  text-align: center;
+  margin-inline: max(calc((100vw - 70rem) / 2), 1.5rem);
+}
+
+form {
+  display: grid;
+  gap: 0.8em;
+  max-width: calc(var(--_size) * 20);
+  font-size: var(--_size);
+  text-align: left;
+  padding-block: 0.5em;
+}
