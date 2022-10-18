@@ -1,8 +1,12 @@
 export default function LoginPage(){
     return(
         <section>
-            <label htmlFor="Email" name="email">Email</label>
-            <input id="Email" type="email" />
+            <form>
+                <div>
+                    <label className="form-label" htmlFor="Email" name="email">Email</label>
+                    <input className="form-input" id="Email" type="email" />
+                </div>
+            </form>
         </section>
     )
 }
