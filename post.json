@@ -1,0 +1,19 @@
+[
+    {
+        "name": "nichlas",
+        "age": 25,
+        "cool": true,
+        "xd": "xd"
+    },
+    {
+        "name": "laura",
+        "age": 24,
+        "cool": false,
+        "xd": "xd",
+        "time": {
+            "dag": true,
+            "aften": true,
+            "heledagen": true
+        }
+    }
+]
