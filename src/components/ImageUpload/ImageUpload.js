@@ -1,4 +1,5 @@
 import React from "react";
+
 function ImageUpload() {
     const uploadedImage = React.useRef(null);
     const imageUploader = React.useRef(null);
