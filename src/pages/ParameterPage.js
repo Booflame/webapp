@@ -1,3 +1,6 @@
+import Header from '../components/Header/Header';
+import BotNav from '../components/BottomNavigation/BotNav';
+
 export default function ParameterPage() {
     return (
         <>
@@ -5,7 +8,6 @@ export default function ParameterPage() {
                 <Header></Header>
                 <h1>halløj</h1>
             </section>
-            <Switch />
             <BotNav />
         </>
     )
