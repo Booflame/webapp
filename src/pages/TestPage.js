@@ -4,7 +4,7 @@ export default function TestPage() {
 
         <section>
             <Header></Header>
-            <h1>halløj</h1>
+            <h1>Dette er en test</h1>
         </section>
     )
 }

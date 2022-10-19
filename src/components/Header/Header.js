@@ -8,7 +8,7 @@ export default function Header() {
                     <img src="/images/notification.png" alt="Notifications button"></img>
                 </a>
 
-                <a className="headerimg" href="-" target="_blank" rel="noreferrer">
+                <a className="headerlogo" href="-" target="_blank" rel="noreferrer">
                     <img src="/images/logo.png" alt="Logo"></img>
                 </a>
 
