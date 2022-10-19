@@ -19,4 +19,27 @@
   padding: 10px;
 }
 @media only screen and (min-width: 390px) {
+<<<<<<< Updated upstream
 }
+=======
+    .headerflex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--header);
+      }
+    
+    .headerimg {
+        width: 20%;
+        padding: 0.5em;
+        display: block;
+    }
+    .headerlogo {
+        width: 25%;
+        padding: 0.5em;
+        display: block;
+    }
+   
+    
+    }
+>>>>>>> Stashed changes

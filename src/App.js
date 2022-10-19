@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import ProfilePage from './pages/ProfilePage';
 import TestPage from './pages/TestPage';
 import WelcomePage from './pages/WelcomePage';
+import DatePage from './pages/DatePage';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         <Route path='/login' element={<LoginPage />} />
         <Route path='/profile' element={<ProfilePage />} />
         <Route path='/test' element={<TestPage />} />
+        <Route path='/date' element={<DatePage />} />
+
+
       </Routes>
     </>
   );
