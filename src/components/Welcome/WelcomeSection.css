@@ -2,7 +2,35 @@
     --other: #1B7C9D;
     --header: #2B3A67;
     --bgcolor: #3E885B;
+    --white: #F1F5F1;
+
 }
+
 .welcome {
-    background-color: var(--bgcolor);
+    background-color: var(--white);
+    display: grid;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.welcomelogo {
+    padding: 2em;
+}
+
+.welcomebutton {
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 45px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#wbutton {
+    background-color: var(--header);
+}
+#wbutton2 {
+    background-color: var(--other);
 }

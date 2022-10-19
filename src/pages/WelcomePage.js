@@ -5,7 +5,6 @@ export default function WelcomePage() {
 
         <section>
             <WelcomeSection></WelcomeSection>
-            <h1>HEJ</h1>
         </section>
     )
 }

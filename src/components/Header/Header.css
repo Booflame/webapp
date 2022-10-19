@@ -11,12 +11,12 @@
 }
 
 .headerimg {
-  width: 20%;
-  padding: 0.5em;
+  width: 15%;
+  padding: 10px;
 }
 .headerlogo {
   width: 25%;
-  padding: 0.5em;
+  padding: 10px;
 }
 @media only screen and (min-width: 390px) {
 }
