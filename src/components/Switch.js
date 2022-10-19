@@ -2,7 +2,7 @@ import './switch.css';
 export default function Switch() {
 
     const labels = document.querySelectorAll(".radio-label");
-    const ring = document.querySelector("#ring")
+    // const ring = document.querySelector(".ring")
 
     labels.forEach(label => {
         label.addEventListener("click", () => {
@@ -11,53 +11,53 @@ export default function Switch() {
             const labelX = label.getBoundingClientRect().left;
             const labelY = label.getBoundingClientRect().top;
 
-            console.log(labelX)
-            ring.style.width = labelWidth;
-            ring.style.height = labelHeight;
-            ring.style.left = labelX + "px";
-            ring.style.top = labelY + "px";
+            const nodeRing = label.parentElement.parentElement.firstChild;
+            nodeRing.style.width = labelWidth;
+            nodeRing.style.height = labelHeight;
+            nodeRing.style.left = labelX + "px";
+            nodeRing.style.top = labelY + "px";
         })
     });
 
     return (
         <form className='form-switches'>
             <p>Hvem</p>
-            <div className="radio-group-wrapper">
-                <div id='ring'></div>
+            <div className="radio-group-wrapper" data-group="who">
+                <div className='ring'></div>
                 <div className="radio-wrapper">
-                    <input id="one" type="radio" name="who" />
-                    <label className='radio-label' htmlFor="one">Mig</label>
+                    <input id="who1" type="radio" name="who" />
+                    <label className='radio-label' htmlFor="who1">Mig</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="two" type="radio" name="who" />
-                    <label className='radio-label' htmlFor="two">Partner</label>
+                    <input id="who2" type="radio" name="who" />
+                    <label className='radio-label' htmlFor="who2">Partner</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="tre" type="radio" name="who" />
-                    <label className='radio-label' htmlFor="tre">Venner</label>
+                    <input id="who3" type="radio" name="who" />
+                    <label className='radio-label' htmlFor="who3">Venner</label>
                 </div>
             </div>
 
             <p>Hvor</p>
-            <div className="radio-group-wrapper">
-                <div id='ring'></div>
+            <div className="radio-group-wrapper" data-group="where">
+                <div className='ring'></div>
                 <div className="radio-wrapper">
-                    <input id="one" type="radio" name="where" />
-                    <label className='radio-label' htmlFor="one">Hjemme</label>
+                    <input id="where1" type="radio" name="where" />
+                    <label className='radio-label' htmlFor="where1">Hjemme</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="two" type="radio" name="where" />
-                    <label className='radio-label' htmlFor="two">Ude</label>
+                    <input id="where2" type="radio" name="where" />
+                    <label className='radio-label' htmlFor="where2">Ude</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="tre" type="radio" name="where" />
-                    <label className='radio-label' htmlFor="tre">Begge</label>
+                    <input id="where2" type="radio" name="where" />
+                    <label className='radio-label' htmlFor="where2">Begge</label>
                 </div>
             </div>
 
             <p>Hvornår</p>
             <div className="radio-group-wrapper">
-                <div id='ring'></div>
+                <div className='ring'></div>
                 <div className="radio-wrapper">
                     <input id="one" type="radio" name="when" />
                     <label className='radio-label' htmlFor="one">Dag</label>
@@ -74,7 +74,7 @@ export default function Switch() {
 
             <p>Budget</p>
             <div className="radio-group-wrapper">
-                <div id='ring'></div>
+                <div className='ring'></div>
                 <div className="radio-wrapper">
                     <input id="one" type="radio" name="budget" />
                     <label className='radio-label' htmlFor="one">Gratis</label>

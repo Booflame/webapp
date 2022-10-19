@@ -1,15 +1,24 @@
 .form-switches {
   max-width: 500px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-switches p {
+  text-align: center;
+  margin-block: 1rem;
+  font-weight: bolder;
 }
 
 .radio-group-wrapper {
   height: 50px;
   border-radius: 25px;
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  margin-inline: 1rem;
   box-shadow: 0 0 0 3px #000;
 }
 .radio-wrapper input {
@@ -20,20 +29,20 @@
   display: inline-block;
   line-height: 1;
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   cursor: pointer;
   font-family: "Inter", sans-serif;
   border: 3px solid transparent;
 }
 
-#ring {
+.ring {
   position: absolute;
   width: 92.2344px;
   height: 48px;
+  left: 92.7344px;
+  top: 108.391px;
   border-radius: 25px;
   border: 3px solid #000;
   padding: 1rem 2rem;
-  left: 92.7344px;
-  top: 108.391px;
-  transition: left 500ms ease-in-out, width 500ms ease-in-out;
+  transition: left 500ms ease-in-out, width 500ms ease;
 }
