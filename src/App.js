@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import ProfilePage from './pages/ProfilePage';
 import Nav from './components/BottomNavigation/BotNav';
 import TestPage from './pages/TestPage';
+import WelcomePage from './pages/WelcomePage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/welcome' element={<WelcomePage />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/profile' element={<ProfilePage />} />
         <Route path='/test' element={<TestPage />} />
