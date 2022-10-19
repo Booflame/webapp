@@ -1,0 +1,10 @@
+.headerflex {
+    display: flex;
+    justify-content: center;
+  }
+
+.headerimg {
+    width: 10%;
+    padding: 1em;
+    display: block;
+}
