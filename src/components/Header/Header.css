@@ -1,0 +1,27 @@
+:root{
+    --other: #1B7C9D;
+    --header: #2B3A67;
+}
+
+.headerflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header);
+  }
+
+.headerimg {
+    width: 20%;
+    padding: 0.5em;
+    display: block;
+}
+.headerlogo {
+    width: 25%;
+    padding: 0.5em;
+    display: block;
+}
+@media only screen and (min-width: 390px) {
+
+   
+    
+    }

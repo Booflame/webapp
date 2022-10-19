@@ -1,0 +1,8 @@
+:root{
+    --other: #1B7C9D;
+    --header: #2B3A67;
+    --bgcolor: #3E885B;
+}
+.welcome {
+    background-color: var(--bgcolor);
+}
