@@ -6,7 +6,6 @@ export default function HomePage() {
 
         <section>
             <Header></Header>
-            <ImageUpload />
             <h1>halløj</h1>
         </section>
     )
