@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import './Nav.css';
+import './BotNav.css';
 
-export default function Nav() {
+export default function BotNav() {
     return (
         <nav>
             <NavLink to="/"><img className="icons" src="/images/home_icon.png" alt="home icon"></img></NavLink>
