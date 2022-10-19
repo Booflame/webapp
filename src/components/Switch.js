@@ -25,15 +25,15 @@ export default function Switch() {
             <div className="radio-group-wrapper">
                 <div id='ring'></div>
                 <div className="radio-wrapper">
-                    <input id="one" type="radio" name="hvor" />
+                    <input id="one" type="radio" name="who" />
                     <label className='radio-label' htmlFor="one">Mig</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="two" type="radio" name="hvor" />
+                    <input id="two" type="radio" name="who" />
                     <label className='radio-label' htmlFor="two">Partner</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="tre" type="radio" name="hvor" />
+                    <input id="tre" type="radio" name="who" />
                     <label className='radio-label' htmlFor="tre">Venner</label>
                 </div>
             </div>
@@ -42,15 +42,15 @@ export default function Switch() {
             <div className="radio-group-wrapper">
                 <div id='ring'></div>
                 <div className="radio-wrapper">
-                    <input id="one" type="radio" name="hvor" />
+                    <input id="one" type="radio" name="where" />
                     <label className='radio-label' htmlFor="one">Hjemme</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="two" type="radio" name="hvor" />
+                    <input id="two" type="radio" name="where" />
                     <label className='radio-label' htmlFor="two">Ude</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="tre" type="radio" name="hvor" />
+                    <input id="tre" type="radio" name="where" />
                     <label className='radio-label' htmlFor="tre">Begge</label>
                 </div>
             </div>
@@ -59,15 +59,15 @@ export default function Switch() {
             <div className="radio-group-wrapper">
                 <div id='ring'></div>
                 <div className="radio-wrapper">
-                    <input id="one" type="radio" name="hvor" />
+                    <input id="one" type="radio" name="when" />
                     <label className='radio-label' htmlFor="one">Dag</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="two" type="radio" name="hvor" />
+                    <input id="two" type="radio" name="when" />
                     <label className='radio-label' htmlFor="two">Aften</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="tre" type="radio" name="hvor" />
+                    <input id="tre" type="radio" name="when" />
                     <label className='radio-label' htmlFor="tre">Hele dagen</label>
                 </div>
             </div>
@@ -76,19 +76,19 @@ export default function Switch() {
             <div className="radio-group-wrapper">
                 <div id='ring'></div>
                 <div className="radio-wrapper">
-                    <input id="one" type="radio" name="hvor" />
+                    <input id="one" type="radio" name="budget" />
                     <label className='radio-label' htmlFor="one">Gratis</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="two" type="radio" name="hvor" />
+                    <input id="two" type="radio" name="budget" />
                     <label className='radio-label' htmlFor="two">$</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="tre" type="radio" name="hvor" />
+                    <input id="tre" type="radio" name="budget" />
                     <label className='radio-label' htmlFor="tre">$$</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="fire" type="radio" name="hvor" />
+                    <input id="fire" type="radio" name="budget" />
                     <label className='radio-label' htmlFor="fire">$$$</label>
                 </div>
             </div>
