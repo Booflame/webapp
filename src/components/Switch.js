@@ -1,5 +1,5 @@
 import './switch.css';
-export default function Switch(){
+export default function Switch() {
 
     const labels = document.querySelectorAll(".radio-label");
     const ring = document.querySelector("#ring")
@@ -19,22 +19,77 @@ export default function Switch(){
         })
     });
 
-    return(
+    return (
         <form className='form-switches'>
-            <p>vælg én</p>
+            <p>Hvem</p>
             <div className="radio-group-wrapper">
                 <div id='ring'></div>
                 <div className="radio-wrapper">
-                    <input id="one" type="radio" name="hvor"/>
-                    <label className='radio-label' htmlFor="one">one</label>
+                    <input id="one" type="radio" name="hvor" />
+                    <label className='radio-label' htmlFor="one">Mig</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="two" type="radio" name="hvor"/>
-                    <label className='radio-label' htmlFor="two">two</label>
+                    <input id="two" type="radio" name="hvor" />
+                    <label className='radio-label' htmlFor="two">Partner</label>
                 </div>
                 <div className="radio-wrapper">
-                    <input id="tre" type="radio" name="hvor"/>
-                    <label className='radio-label' htmlFor="tre">tre</label>
+                    <input id="tre" type="radio" name="hvor" />
+                    <label className='radio-label' htmlFor="tre">Venner</label>
+                </div>
+            </div>
+
+            <p>Hvor</p>
+            <div className="radio-group-wrapper">
+                <div id='ring'></div>
+                <div className="radio-wrapper">
+                    <input id="one" type="radio" name="hvor" />
+                    <label className='radio-label' htmlFor="one">Hjemme</label>
+                </div>
+                <div className="radio-wrapper">
+                    <input id="two" type="radio" name="hvor" />
+                    <label className='radio-label' htmlFor="two">Ude</label>
+                </div>
+                <div className="radio-wrapper">
+                    <input id="tre" type="radio" name="hvor" />
+                    <label className='radio-label' htmlFor="tre">Begge</label>
+                </div>
+            </div>
+
+            <p>Hvornår</p>
+            <div className="radio-group-wrapper">
+                <div id='ring'></div>
+                <div className="radio-wrapper">
+                    <input id="one" type="radio" name="hvor" />
+                    <label className='radio-label' htmlFor="one">Dag</label>
+                </div>
+                <div className="radio-wrapper">
+                    <input id="two" type="radio" name="hvor" />
+                    <label className='radio-label' htmlFor="two">Aften</label>
+                </div>
+                <div className="radio-wrapper">
+                    <input id="tre" type="radio" name="hvor" />
+                    <label className='radio-label' htmlFor="tre">Hele dagen</label>
+                </div>
+            </div>
+
+            <p>Budget</p>
+            <div className="radio-group-wrapper">
+                <div id='ring'></div>
+                <div className="radio-wrapper">
+                    <input id="one" type="radio" name="hvor" />
+                    <label className='radio-label' htmlFor="one">Gratis</label>
+                </div>
+                <div className="radio-wrapper">
+                    <input id="two" type="radio" name="hvor" />
+                    <label className='radio-label' htmlFor="two">$</label>
+                </div>
+                <div className="radio-wrapper">
+                    <input id="tre" type="radio" name="hvor" />
+                    <label className='radio-label' htmlFor="tre">$$</label>
+                </div>
+                <div className="radio-wrapper">
+                    <input id="fire" type="radio" name="hvor" />
+                    <label className='radio-label' htmlFor="fire">$$$</label>
                 </div>
             </div>
         </form>

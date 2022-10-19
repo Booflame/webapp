@@ -9,13 +9,8 @@ export default function HomePage() {
                 <Header></Header>
                 <h1>halløj</h1>
             </section>
+            <Switch />
             <BotNav />
         </>
-
-        <section>
-            <Header></Header>
-            <h1>halløj</h1>
-            <Switch />
-        </section>
     )
 }
