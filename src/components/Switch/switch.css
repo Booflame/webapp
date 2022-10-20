@@ -1,0 +1,22 @@
+.radio-group-wrapper {
+  height: 50px;
+  border-radius: 25px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1vmax;
+  box-shadow: 0 0 0 3px #000;
+}
+.radio-wrapper input {
+  display: none;
+}
+.radio-wrapper label {
+  border-radius: 25px;
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  border: 3px solid transparent;
+}
