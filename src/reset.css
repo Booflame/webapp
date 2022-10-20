@@ -19,7 +19,7 @@ p {
   margin: 0;
 }
 
-/* Margin and padding from lists */
+/* Remove margin and padding from lists */
 ol,
 ul {
   margin: 0;

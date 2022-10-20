@@ -1,5 +1,6 @@
 import React from 'react';
 import './reset.css';
+import './style.css';
 import { Route, Routes } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
@@ -18,8 +19,6 @@ function App() {
         <Route path='/profile' element={<ProfilePage />} />
         <Route path='/test' element={<TestPage />} />
         <Route path='/date' element={<DatePage />} />
-
-
       </Routes>
     </>
   );
