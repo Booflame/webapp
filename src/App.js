@@ -8,6 +8,7 @@ import ProfilePage from './pages/ProfilePage';
 import TestPage from './pages/TestPage';
 import WelcomePage from './pages/WelcomePage';
 import DatePage from './pages/DatePage';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route path='/profile' element={<ProfilePage />} />
         <Route path='/test' element={<TestPage />} />
         <Route path='/date' element={<DatePage />} />
+        <Route path='/error' element={<ErrorPage />} />
+
       </Routes>
     </>
   );
