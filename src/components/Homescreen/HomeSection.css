@@ -1,0 +1,45 @@
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap; }
+  
+    .card {
+      display: inline-block;
+    }
+    .scrolling-wrapper {
+        -webkit-overflow-scrolling: touch;
+      }
+
+.card {
+    padding: 1em;
+}
+
+.cardimg {
+    width: 100%;
+}
+
+.cardh2 {
+    text-align: center;
+}
+
+.homebutton {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 45px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+#hbutton {
+    background-color: var(--other);
+}
+#hbutton2 {
+    background-color: var(--other);
+}
+
+.flexhomebutton {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

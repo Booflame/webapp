@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import parse from "html-react-parser";
+
 
 export default function DatePost({ post }) {
     let image = "https://avatars.githubusercontent.com/u/90176537?v=4";
@@ -11,8 +13,8 @@ export default function DatePost({ post }) {
         <section className="client-row">
             <Link to={'/dateitem/' + post.id}>
                 <article>
-                    <h3 dangerouslySetInnerHTML={{ __html: post.title.rendered }}></h3>
-                    <div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}></div>
+                    <h3>{parse(post.title.rendered)}</h3>
+                    <div>{parse(post.excerpt.rendered)}</div>
                 </article>
                 <figure>
                     <img src={image} alt={post.title.rendered} />
