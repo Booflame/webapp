@@ -1,9 +1,12 @@
 import './Parameters.css';
 import Switch from '../Switch/Switch';
+import { useRef } from 'react';
 
 export default function Parameter() {
 
     const rings = document.querySelectorAll(".ring")
+
+    useRef();
 
     rings.forEach(ring => {
         const startX = ring.dataset.startX;

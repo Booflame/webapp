@@ -18,13 +18,10 @@ export default function DateSection() {
 
     return (
         <section>
-            <h2>DATEEEE</h2>
-
+            <h2>DATE</h2>
             <div className="portfoliogrid "> {posts.map(post => (
                 <DatePost key={post.id} post={post} />
             ))}</div>
-
         </section>
-
     );
 }

@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import './switch.css';
 
 export default function Switch({name, group, value}) {
+
+     useState("");
 
     function moveRing(e) {
         const label = e.target
@@ -20,7 +23,7 @@ export default function Switch({name, group, value}) {
     return (
         <div className="radio-wrapper">
             <input id={name} type="radio" name={group} />
-            <label onClick={(e) => moveRing(e)} className='radio-label' htmlFor={name}>{value}</label>
+            <label onClick={e => moveRing(e)} className='radio-label' htmlFor={name}>{value}</label>
         </div>
     )
 }
