@@ -1,0 +1,23 @@
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap; }
+  
+    .card {
+      display: inline-block;
+    }
+    .scrolling-wrapper {
+        -webkit-overflow-scrolling: touch;
+      }
+
+.card {
+    padding: 1em;
+}
+
+.cardimg {
+    width: 100%;
+}
+
+.cardh2 {
+    text-align: center;
+}
