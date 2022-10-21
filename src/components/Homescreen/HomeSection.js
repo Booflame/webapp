@@ -26,9 +26,14 @@ export default function HomeSection() {
                     <img className="cardimg" src="/images/memory.png" alt="Logo"></img>
                     <h2 className="cardh2">Card</h2>
                 </div>
-
-
             </div>
+
+            <div className='flexhomebutton'>
+                <a href="-" className='homebutton' id='hbutton'>Kom i gang! </a>
+
+                <a href="-" className='homebutton' id='hbutton2' >Opret dig </a>
+            </div>
+
 
 
         </section >
