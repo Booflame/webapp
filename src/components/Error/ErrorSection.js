@@ -1,3 +1,4 @@
+import BotNav from '../BottomNavigation/BotNav';
 import Header from '../Header/Header';
 import './ErrorSection.css'
 export default function ErrorSection() {
@@ -12,7 +13,7 @@ export default function ErrorSection() {
             <br></br>
             <a href="-" className='errorbutton' id='wbutton'>Startside</a>
 
-
+            <BotNav></BotNav>
         </section >
     );
 }

@@ -8,7 +8,7 @@ export default function WelcomeSection() {
 
             <a href="-" className='welcomebutton' id='wbutton'>Kom i gang! </a>
 
-            <a href="-" className='welcomebutton' id='wbutton2' >Opret dig </a>
+            <a href="-" className='welcomebutton' id='wbutton2' >Login </a>
 
         </section >
     );
