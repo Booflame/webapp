@@ -1,13 +1,13 @@
-import { Back } from "../components/BackButton/Back"
 import BotNav from "../components/BottomNavigation/BotNav"
+import Header from "../components/Header/Header"
+import ProfileSection from "../components/Profile/ProfileSection"
 
 export default function ProfilePage() {
     return (
         <>
-            <Back></Back>
-            <section>
-                <h1>halløj</h1>
-            </section>
+            <Header></Header>
+            <ProfileSection></ProfileSection>
+
             <BotNav />
         </>
     )
