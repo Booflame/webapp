@@ -5,8 +5,8 @@
 
 .headerflex {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 8vmax;
   background-color: var(--header);
 }
 
