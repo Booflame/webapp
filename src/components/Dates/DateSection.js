@@ -1,4 +1,3 @@
-
 import DatePost from "./DatePost";
 import { useEffect, useState } from "react";
 
@@ -13,7 +12,6 @@ export default function DateSection() {
             console.log(filterData);
             setPosts(filterData);
         }
-
         getData();
     }, []);
 

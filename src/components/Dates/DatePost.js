@@ -17,7 +17,8 @@ export default function DatePost({ post }) {
                 </article>
                 <figure>
                     <img src={image} alt={post.title.rendered} />
-                </figure></Link>
+                </figure>
+            </Link>
         </section>
     )
 }
