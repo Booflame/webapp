@@ -7,7 +7,7 @@ export default function Header() {
         <header>
             <div className="headerflex">
                 <Back></Back>
-                <NavLink className="headerlogo" to=""><img src="/images/logo.png" alt="Logo" /></NavLink>
+                <NavLink className="headerlogo" to="/home"><img src="/images/logo.png" alt="Logo" /></NavLink>
             </div>
         </header>
     );

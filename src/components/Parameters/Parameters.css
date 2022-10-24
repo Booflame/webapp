@@ -20,3 +20,40 @@
   background-color: hsl(0 10% 90%);
   padding: 0.25em;
 }
+.parameter-btn {
+  border: none;
+  cursor: pointer;
+  max-width: fit-content;
+  display: flex;
+  place-items: center;
+  gap: 0.5em;
+  background-color: #2b3a67;
+  color: hsl(var(--bg));
+  text-decoration: none;
+  padding: 0.4em 1.4em;
+  border-radius: var(--_radius);
+  box-shadow: 0.05em 0.1em 0.9em hsl(var(--accent) / 0.3), 0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent));
+  transition: box-shadow var(--_tspeed_slow) var(--_ttype_squish), background-color var(--_tspeed_slow) var(--_ttype_squish);
+  margin-block: 1rem;
+}
+
+.parameter-btn:where(svg, img, span) {
+  pointer-events: none;
+}
+
+.parameter-btn:where(svg, img) {
+  width: var(--_size);
+}
+
+.parameter-btn:where(:active, :hover) {
+  background-color: hsl(var(--accent) / 0.7);
+  box-shadow: 0 0 0 hsl(var(--accent) / 0.3), 0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent));
+}
+
+.parameter-btn:focus {
+  outline: none;
+}
+
+.parameter-btn:focus-visible {
+  box-shadow: 0 0 0 hsl(var(--accent) / 0.3), 0 0 0 0.2em hsl(var(--bg)), 0 0 0 0.4em hsl(var(--accent) / 0.7);
+}

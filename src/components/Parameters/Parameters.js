@@ -1,12 +1,7 @@
 import './Parameters.css';
 import Switch from '../Switch/Switch';
-import { useState } from 'react';
 
 export default function Parameter() {
-
-
-   
-
 
     function HandleSubmit(e) {
         e.preventDefault()
@@ -45,7 +40,7 @@ export default function Parameter() {
                 <Switch name="budget3" group="budget" value="$$" />
                 <Switch name="budget4" group="budget" value="$$$" />
             </div>
-            <button>Submit</button>
+            <button className='parameter-btn'>Opret</button>
         </form>
     );
 };
