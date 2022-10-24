@@ -6,6 +6,7 @@ import LandingPage from './pages/LandingPage';
 import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import ProfilePage from './pages/ProfilePage';
+import ParameterPage from './pages/ParameterPage';
 import TestPage from './pages/TestPage';
 import DatePage from './pages/DatePage';
 import ErrorPage from './pages/ErrorPage';
@@ -18,6 +19,7 @@ function App() {
         <Route path='/home' element={<HomePage />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/profile' element={<ProfilePage />} />
+        <Route path='/parameter' element={<ParameterPage />} />
         <Route path='/test' element={<TestPage />} />
         <Route path='/date' element={<DatePage />} />
         <Route path='/error' element={<ErrorPage />} />

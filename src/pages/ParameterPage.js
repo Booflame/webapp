@@ -1,13 +1,12 @@
 import Header from '../components/Header/Header';
 import BotNav from '../components/BottomNavigation/BotNav';
+import Parameter from '../components/Parameters/Parameters';
 
 export default function ParameterPage() {
     return (
         <>
-            <section>
-                <Header></Header>
-                <h1>halløj</h1>
-            </section>
+            <Header/>
+            <Parameter/>
             <BotNav />
         </>
     )
