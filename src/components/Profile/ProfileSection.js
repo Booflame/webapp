@@ -1,4 +1,5 @@
 import './ProfileSection.css'
+import { NavLink } from 'react-router-dom';
 export default function ProfileSection() {
     return (
         <section >
@@ -55,25 +56,35 @@ export default function ProfileSection() {
                 <div className='achbigcard'>
                     <div className="achcard">
                         <img src="/images/profilepic.png" alt="Avatar"></img>
-                        <div className="container">
+                        <div className="achtext">
                             <h4><b>Ægte romantiker</b></h4>
                             <p>Så solnedgangen med din partner</p>
                         </div>
                     </div>
+                    <hr></hr>
                     <div className="achcard">
                         <img src="/images/profilepic.png" alt="Avatar"></img>
-                        <div className="container">
+                        <div className="achtext">
                             <h4><b>Æblerov for to</b></h4>
                             <p>Gennemførte daten "æbleplukning" med en ven</p>
                         </div>
                     </div>
+                    <hr></hr>
+
                     <div className="achcard">
                         <img src="/images/profilepic.png" alt="Avatar"></img>
-                        <div className="container">
+                        <div className="achtext">
                             <h4><b>Puzzlemaniac</b></h4>
                             <p>Gennemførte udfordringen "Læg et puslespil på mindst 500 brikker"</p>
                         </div>
                     </div>
+                    <hr></hr>
+                    <NavLink to="/error" className='friendsbutton' id='wbutton'>
+                        Se flere
+                    </NavLink>
+
+
+
 
                 </div>
 
@@ -81,9 +92,6 @@ export default function ProfileSection() {
 
             </section>
 
-            <br></br>
-            <br></br>
-            <br></br>
             <br></br>
             <br></br>
             <br></br>
