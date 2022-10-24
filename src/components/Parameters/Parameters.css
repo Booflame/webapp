@@ -11,15 +11,12 @@
   margin-block: 1rem;
   font-weight: bolder;
 }
-
-.ring {
-  position: absolute;
-  width: 100.094px;
-  height: 54px;
-  left: 53.375px;
-  top: 151.5px;
+.radio-group-wrapper {
   border-radius: 25px;
-  border: 3px solid #000;
-  padding: 1rem 1em;
-  transition: left 500ms ease-in-out, width 500ms ease;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1vmax;
+  background-color: hsl(0 10% 90%);
+  padding: 0.25em;
 }

@@ -9,7 +9,7 @@ export default function DateSection() {
         async function getData() {
             const res = await fetch("https://webappindhold.frejavangilst.com/wp-json/wp/v2/posts?_embed");
             const data = await res.json();
-            console.log(data);
+            console.log(data.filter(d => (d.acf.hvor).includes("ude")));
             setPosts(data);
         }
 
@@ -19,7 +19,7 @@ export default function DateSection() {
     return (
         <section>
             <h2>DATE</h2>
-            <div className="portfoliogrid "> {posts.map(post => (
+            <div className="portfoliogrid"> {posts.map(post => (
                 <DatePost key={post.id} post={post} />
             ))}</div>
         </section>

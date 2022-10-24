@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import parse from "html-react-parser";
 
-
 export default function DatePost({ post }) {
     let image = "https://avatars.githubusercontent.com/u/90176537?v=4";
 
@@ -20,5 +19,5 @@ export default function DatePost({ post }) {
                     <img src={image} alt={post.title.rendered} />
                 </figure></Link>
         </section>
-    );
+    )
 }

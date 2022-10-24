@@ -6,7 +6,7 @@ export default function DateItem() {
     console.log(params)
     return (
         <>
-            <DateItemComponent id={params.ItemId}></DateItemComponent>
+            <DateItemComponent id={params.ItemId}/>
         </>
     );
 }
