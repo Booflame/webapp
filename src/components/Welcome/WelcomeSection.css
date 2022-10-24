@@ -1,36 +1,38 @@
-:root{
-    --other: #1B7C9D;
-    --header: #2B3A67;
-    --bgcolor: #3E885B;
-    --white: #F1F5F1;
-
+:root {
+  --other: #1b7c9d;
+  --header: #2b3a67;
+  --bgcolor: #3e885b;
+  --white: #f1f5f1;
 }
 
 .welcome {
-    background-color: var(--white);
-    display: grid;
-    justify-content: center;
-    min-height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5vmax;
+  min-height: 100vh;
+  padding-block: 4em;
 }
 
 .welcomelogo {
-    padding: 2em;
+  padding: 2em;
 }
 
 .welcomebutton {
-    padding: 2rem;
-    margin: 2rem;
-    border-radius: 45px;
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 1em;
+  padding: 1em;
+  margin-inline: 1em;
 }
 
 #wbutton {
-    background-color: var(--header);
+  background-color: var(--header);
 }
 #wbutton2 {
-    background-color: var(--other);
+  background-color: var(--other);
 }

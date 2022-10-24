@@ -1,17 +1,12 @@
 import './Parameters.css';
 import Switch from '../Switch/Switch';
+import { useState } from 'react';
 
 export default function Parameter() {
 
-    const rings = document.querySelectorAll(".ring")
 
-    rings.forEach(ring => {
-        const startX = ring.dataset.startX
-        const startY = ring.dataset.startY
+   
 
-        ring.style.left = startX
-        ring.style.top = startY
-    })
 
     function HandleSubmit(e) {
         e.preventDefault()
@@ -19,17 +14,17 @@ export default function Parameter() {
     }
 
     function HandleChange(e) {
-        // const value = e.target.nextSibling.textContent;
-        // console.log(value)
+        const value = e.target.nextSibling.textContent;
+        console.log(value)
     }
 
     return (
         <form className='form-switches' onSubmit={HandleSubmit}>
             <p>Hvem</p>
             <div onChange={HandleChange} className="radio-group-wrapper" data-group="who">
-                <Switch name="who1" group="who" value="mig" />
-                <Switch name="who2" group="who" value="partner" />
-                <Switch name="who3" group="who" value="venner" />
+                <Switch name="who1" group="who" value="Mig" />
+                <Switch name="who2" group="who" value="Partner" />
+                <Switch name="who3" group="who" value="Venner" />
             </div>
             <p>Hvor</p>
             <div onChange={HandleChange} className="radio-group-wrapper" data-group="where">

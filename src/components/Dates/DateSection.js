@@ -9,8 +9,9 @@ export default function DateSection() {
         async function getData() {
             const res = await fetch("https://webappindhold.frejavangilst.com/wp-json/wp/v2/posts?_embed");
             const data = await res.json();
-            console.log(data.filter(d => (d.acf.hvor).includes("ude")));
-            setPosts(data);
+            const filterData = data.filter(e => (e.acf.where).includes("ude"))
+            console.log(filterData);
+            setPosts(filterData);
         }
 
         getData();
