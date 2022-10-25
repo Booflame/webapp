@@ -8,7 +8,11 @@ export default function Parameter() {
 
     function HandleSubmit(e) {
         e.preventDefault()
-        console.log(values)
+        sessionStorage.setItem("who", values.who)
+        sessionStorage.setItem("where", values.where)
+        sessionStorage.setItem("when", values.when)
+        sessionStorage.setItem("budget", values.budget)
+        window.open("/date")
     }
 
     return (
