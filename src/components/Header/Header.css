@@ -1,6 +1,6 @@
 :root {
   --other: #1b7c9d;
-  --header: #2b3a67;
+  --header: #1C3E77;
 }
 
 .headerflex {
@@ -10,12 +10,9 @@
   background-color: var(--header);
 }
 
-.headerimg {
-  width: 15%;
-  padding: 10px;
-}
+
 .headerlogo {
-  width: 25%;
+
   padding: 10px;
 }
 @media only screen and (min-width: 390px) {
