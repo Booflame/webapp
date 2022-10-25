@@ -1,3 +1,7 @@
+body {
+  font-family: poppins, sans-serif;
+
+}
 .scrolling-wrapper {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -17,6 +21,7 @@
 
 .cardimg {
     width: 150px;
+    border-radius: 20%;
 }
 
 .cardh2 {
@@ -48,4 +53,10 @@
 
 .welcomeh2 {
     text-align: center;
+    font-size: 1.5em;
+}
+
+.welcomeh3 {
+    text-align: center;
+    font-size: 1.3em;
 }

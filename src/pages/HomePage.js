@@ -6,7 +6,6 @@ export default function HomePage() {
         <>
             <Header></Header>
             <HomeSection></HomeSection>
-            <h1>Home page</h1>
             <BotNav />
         </>
     )
