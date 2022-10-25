@@ -6,13 +6,15 @@
 .headerflex {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8vmax;
   background-color: var(--header);
+  height: 100px;
 }
 
 
 .headerlogo {
-
+  width: 50%;
   padding: 10px;
 }
 @media only screen and (min-width: 390px) {
