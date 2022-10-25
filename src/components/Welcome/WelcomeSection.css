@@ -1,3 +1,5 @@
+
+
 :root {
   --other: #1b7c9d;
   --header: #2b3a67;
@@ -6,13 +8,19 @@
 }
 
 .welcome {
-  background-color: var(--white);
+  background-image: url(/public/images/texture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 5vmax;
   min-height: 100vh;
   padding-block: 4em;
+}
+
+.welcome img {
+  padding: 30px;
 }
 
 .welcomelogo {
@@ -30,8 +38,17 @@
   margin-inline: 1em;
 }
 
+.welcomebox {
+  border: solid 2px black;
+  border-radius: 25px;
+}
+
+.welcomebox h1 {
+  font-size: 18px;
+}
+
 #wbutton {
-  background-color: var(--header);
+  background-image: url(/public/images/texture.jpg);
 }
 #wbutton2 {
   background-color: var(--other);

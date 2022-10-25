@@ -1,4 +1,5 @@
 import './HomeSection.css'
+import { NavLink } from "react-router-dom";
 export default function HomeSection() {
     return (
         <section className='home'>
@@ -35,7 +36,7 @@ export default function HomeSection() {
             </div>
 
             <div >
-                <a href="-" className='homebutton' id='hbutton'>START</a>
+                <NavLink to="/parameter" className='homebutton id=' hbutton>START</NavLink>
 
             </div>
 
