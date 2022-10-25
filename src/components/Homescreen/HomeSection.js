@@ -12,20 +12,20 @@ export default function HomeSection() {
                     <h2 className="cardh2">Mit minde</h2>
                 </div>
                 <div className="cardminde">
-                    <img className="cardimg" src="/images/memory.png" alt="Logo"></img>
+                    <img className="cardimg" src="/images/memory1.png" alt="Logo"></img>
                     <h2 className="cardh2">Trine Høj</h2>
                 </div>
                 <div className="cardminde">
-                    <img className="cardimg" src="/images/memory.png" alt="Logo"></img>
+                    <img className="cardimg" src="/images/memory3.png" alt="Logo"></img>
                     <h2 className="cardh2">Anders Olsen </h2>
                 </div>
                 <div className="cardminde">
-                    <img className="cardimg" src="/images/memory.png" alt="Logo"></img>
-                    <h2 className="cardh2">Card</h2>
+                    <img className="cardimg" src="/images/memory4.png" alt="Logo"></img>
+                    <h2 className="cardh2">Sandra Zara</h2>
                 </div>
                 <div className="cardminde">
-                    <img className="cardimg" src="/images/memory.png" alt="Logo"></img>
-                    <h2 className="cardh2">Card</h2>
+                    <img className="cardimg" src="/images/memory5.png" alt="Logo"></img>
+                    <h2 className="cardh2">Jeppe Øster</h2>
                 </div>
             </div>
 
@@ -40,7 +40,11 @@ export default function HomeSection() {
 
             </div>
 
+            <div className='welcomeh3'>
+                <h3>Klik på START for at generere en aktivitet </h3>
 
+
+            </div>
 
         </section >
     );
