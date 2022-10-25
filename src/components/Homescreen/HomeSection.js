@@ -6,32 +6,37 @@ export default function HomeSection() {
             {/* https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6 */}
             <div className="scrolling-wrapper">
 
-                <div className="card">
+                <div className="cardminde">
                     <img className="cardimg" src="/images/memory.png" alt="Logo"></img>
                     <h2 className="cardh2">Mit minde</h2>
                 </div>
-                <div className="card">
+                <div className="cardminde">
                     <img className="cardimg" src="/images/memory.png" alt="Logo"></img>
                     <h2 className="cardh2">Trine Høj</h2>
                 </div>
-                <div className="card">
+                <div className="cardminde">
                     <img className="cardimg" src="/images/memory.png" alt="Logo"></img>
                     <h2 className="cardh2">Anders Olsen </h2>
                 </div>
-                <div className="card">
+                <div className="cardminde">
                     <img className="cardimg" src="/images/memory.png" alt="Logo"></img>
                     <h2 className="cardh2">Card</h2>
                 </div>
-                <div className="card">
+                <div className="cardminde">
                     <img className="cardimg" src="/images/memory.png" alt="Logo"></img>
                     <h2 className="cardh2">Card</h2>
                 </div>
             </div>
 
-            <div className='flexhomebutton'>
-                <a href="-" className='homebutton' id='hbutton'>Kom i gang! </a>
+            <div className='welcomeh2'>
+                <h2>Velkommen</h2>
+                <h2>Sofie !</h2>
 
-                <a href="-" className='homebutton' id='hbutton2' >Opret dig </a>
+            </div>
+
+            <div >
+                <a href="-" className='homebutton' id='hbutton'>START</a>
+
             </div>
 
 
