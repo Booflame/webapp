@@ -3,31 +3,35 @@
     overflow-y: hidden;
     white-space: nowrap; }
   
-    .card {
+    .cardminde {
       display: inline-block;
+    padding: 1em;
+   
+
     }
     .scrolling-wrapper {
         -webkit-overflow-scrolling: touch;
       }
 
-.card {
-    padding: 1em;
-}
+
 
 .cardimg {
-    width: 100%;
+    width: 150px;
 }
 
 .cardh2 {
     text-align: center;
+    font-size: 1em;
 }
 
+
 .homebutton {
+    display: block;
     padding: 1rem;
     margin: 1rem;
     border-radius: 45px;
     color: white;
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
@@ -35,11 +39,13 @@
 #hbutton {
     background-color: var(--other);
 }
-#hbutton2 {
-    background-color: var(--other);
-}
+
 
 .flexhomebutton {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.welcomeh2 {
+    text-align: center;
 }
