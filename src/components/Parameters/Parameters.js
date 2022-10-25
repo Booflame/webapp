@@ -12,7 +12,7 @@ export default function Parameter() {
         sessionStorage.setItem("where", values.where)
         sessionStorage.setItem("when", values.when)
         sessionStorage.setItem("budget", values.budget)
-        window.open("/date")
+        window.open("/date", "_self")
     }
 
     return (
