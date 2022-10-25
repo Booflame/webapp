@@ -1,11 +1,11 @@
 import Header from "../components/Header/Header"
-import HomeSection from "../components/Homescreen/HomeSection"
+import DateCard from "../components/Dates/DateCard"
 export default function TestPage() {
     return (
 
         <section>
             <Header></Header>
-            <HomeSection></HomeSection>
+            <DateCard></DateCard>
             <h1>Dette er en test</h1>
         </section>
     )
