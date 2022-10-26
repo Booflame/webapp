@@ -55,7 +55,7 @@ export default function ProfileSection() {
 
                 <div className='achbigcard'>
                     <div className="achcard">
-                        <img src="/images/profilepic.png" alt="Avatar"></img>
+                        <img src="/images/ach1.png" alt="Avatar"></img>
                         <div className="achtext">
                             <h4><b>Ægte romantiker</b></h4>
                             <p>Så solnedgangen med din partner</p>
@@ -63,7 +63,7 @@ export default function ProfileSection() {
                     </div>
                     <hr></hr>
                     <div className="achcard">
-                        <img src="/images/profilepic.png" alt="Avatar"></img>
+                        <img src="/images/ach2.png" alt="Avatar"></img>
                         <div className="achtext">
                             <h4><b>Æblerov for to</b></h4>
                             <p>Gennemførte daten "æbleplukning" med en ven</p>
@@ -72,7 +72,7 @@ export default function ProfileSection() {
                     <hr></hr>
 
                     <div className="achcard">
-                        <img src="/images/profilepic.png" alt="Avatar"></img>
+                        <img src="/images/ach3.png" alt="Avatar"></img>
                         <div className="achtext">
                             <h4><b>Puzzlemaniac</b></h4>
                             <p>Gennemførte udfordringen "Læg et puslespil på mindst 500 brikker"</p>
