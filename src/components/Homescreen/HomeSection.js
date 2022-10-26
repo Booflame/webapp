@@ -35,8 +35,8 @@ export default function HomeSection() {
 
             </div>
 
-            <div >
-                <NavLink to="/parameter" className='homebutton id=' hbutton>START</NavLink>
+            <div >'
+                <NavLink to="/parameter" className='homebutton' id='hbutton'>START</NavLink>
 
             </div>
 
