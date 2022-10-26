@@ -1,23 +1,23 @@
 import DatePost from "./DatePost";
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function DateSection() {
     const [posts, setPosts] = useState([]);
+    const location = useLocation();
     // Her hentes datalisten fra json Wordpress
     useEffect(() => {
         async function getData() {
             const res = await fetch("https://webappindhold.frejavangilst.com/wp-json/wp/v2/posts?_embed");
             const data = await res.json();
 
-            const filterWho = sessionStorage.getItem("who").toLowerCase()
-            const filterWhere = sessionStorage.getItem("where").toLowerCase()
-            const filterWhen = sessionStorage.getItem("when").toLowerCase()
-            if(sessionStorage.getItem("budget").toLowerCase() === "gratis"){
-                sessionStorage.setItem("budget", "none")
+            const filterWho = location.state.who.toLowerCase()
+            const filterWhere = location.state.where.toLowerCase()
+            const filterWhen = location.state.when.toLowerCase()
+            if(location.state.budget.toLowerCase() === "gratis"){
+                location.state.budget = "none"
             }
-            const filterBudget = sessionStorage.getItem("budget").toLowerCase()
-
-            console.log(filterBudget)
+            const filterBudget = location.state.budget.toLowerCase().toLowerCase()
 
             const filterData = data.filter(e => e.acf.who.includes(filterWho)).filter(e => e.acf.where.includes(filterWhere)).filter(e => e.acf.time.includes(filterWhen)).filter(e => e.acf.budget.includes(filterBudget))
 
@@ -26,7 +26,7 @@ export default function DateSection() {
             setPosts(filterData);
         }
         getData();
-    }, []);
+    }, [location]);
 
     return (
         <section>
