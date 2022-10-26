@@ -18,9 +18,13 @@ export default function DateSection() {
             if (location.state.budget.toLowerCase() === "gratis") {
                 location.state.budget = "none"
             }
-            const filterBudget = location.state.budget.toLowerCase().toLowerCase()
+            const filterBudget = location.state.budget.toLowerCase()
 
-            const filterData = data.filter(e => e.acf.who.includes(filterWho)).filter(e => e.acf.where.includes(filterWhere)).filter(e => e.acf.time.includes(filterWhen)).filter(e => e.acf.budget.includes(filterBudget))
+            const filterData = data
+            .filter(e => e.acf.who.includes(filterWho))
+            .filter(e => e.acf.where.includes(filterWhere))
+            .filter(e => e.acf.time.includes(filterWhen))
+            .filter(e => e.acf.budget.includes(filterBudget))
 
             console.log(data);
             console.log(filterData);

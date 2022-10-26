@@ -34,6 +34,33 @@
   height: 100%;
 }
 
+.card figure {
+  border-radius: 1em;
+  overflow: hidden;
+  position: relative;
+}
+
+.card figure::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: hsl(0 0% 0% / 0.1);
+  z-index: 2;
+}
+.card .tag-budget {
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  color: #fff;
+  background-color: #000;
+  padding: 0.3em 0.6em;
+  border-radius: 1em;
+}
+
 .card article {
   background-color: white;
   color: black;
@@ -51,20 +78,14 @@
 }
 
 .card .card-icon {
-  width: 30px;
+  width: 40px;
+  cursor: pointer;
+  fill: black;
 }
-.card figure {
-  border-radius: 1em;
-  overflow: hidden;
+.card .card-icon-filled .card-icon-fill {
+  fill: black;
 }
-
-.card figure::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: hsl(0 0% 0% / 0.1);
-  z-index: 2;
+.card .card-icon-fill {
+  fill: transparent;
+  stroke: none;
 }

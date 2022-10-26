@@ -42,3 +42,6 @@
   padding-block: 1rem;
   overflow-x: hidden;
 }
+body {
+  padding-bottom: 100px;
+}
