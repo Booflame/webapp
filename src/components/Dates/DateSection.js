@@ -9,13 +9,13 @@ export default function DateSection() {
     // Her hentes datalisten fra json Wordpress
     useEffect(() => {
         async function getData() {
-            const res = await fetch("https://webappindhold.frejavangilst.com/wp-json/wp/v2/posts?_embed");
+            const res = await fetch("https://webappindhold.frejavangilst.com/wp-json/wp/v2/posts?_embed&per_page=100");
             const data = await res.json();
 
             const filterWho = location.state.who.toLowerCase()
             const filterWhere = location.state.where.toLowerCase()
             const filterWhen = location.state.when.toLowerCase()
-            if(location.state.budget.toLowerCase() === "gratis"){
+            if (location.state.budget.toLowerCase() === "gratis") {
                 location.state.budget = "none"
             }
             const filterBudget = location.state.budget.toLowerCase().toLowerCase()
