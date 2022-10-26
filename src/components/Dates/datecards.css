@@ -5,15 +5,60 @@
   gap: 2rem;
   position: relative;
 }
+
 .card {
-  background-color: lightsalmon;
+  padding: 1em;
   border-radius: 1em;
   overflow: hidden;
-  border: 1px solid #000;
   position: relative;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.card::after {
+.card:not(:first-of-type) {
+  display: none;
+}
+
+.card:nth-of-type(2) {
+  display: block;
+  position: absolute;
+  left: 103%;
+  width: 100%;
+  height: 100%;
+}
+
+.card:last-of-type {
+  display: block;
+  position: absolute;
+  right: 103%;
+  width: 100%;
+  height: 100%;
+}
+
+.card article {
+  background-color: white;
+  color: black;
+  padding-block: 0.5em;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-block-start: 0.5em;
+}
+
+.card h3 {
+  line-height: 1.1;
+  margin-block-end: 0.4em;
+}
+
+.card .card-icon {
+  width: 30px;
+}
+.card figure {
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.card figure::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -22,39 +67,4 @@
   top: 0;
   background-color: hsl(0 0% 0% / 0.1);
   z-index: 2;
-}
-
-.card:not(:first-of-type) {
-  display: none;
-}
-.card:nth-of-type(2) {
-  display: block;
-  position: absolute;
-  left: 102%;
-  width: 100%;
-  height: 100%;
-}
-.card:last-of-type {
-  display: block;
-  position: absolute;
-  right: 102%;
-  width: 100%;
-  height: 100%;
-}
-
-.card article {
-  position: absolute;
-  background-color: hsl(0 0% 0% / 0.3);
-  width: 100%;
-  bottom: 0;
-  padding-block: 1em;
-  z-index: 3;
-  color: #fff;
-}
-.card h3 {
-  margin-left: 1em;
-  line-height: 1.1;
-}
-.card figure {
-  border-radius: 1em;
 }
