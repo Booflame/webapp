@@ -3,7 +3,7 @@ import './WelcomeSection.css'
 export default function WelcomeSection() {
     return (
         <section className='welcome'>
-            <img src="/images/otterblack1.svg" alt="Logo" />
+            <img src="/images/otterlogoweb.png" alt="Logo" />
             <div className='welcomebox'>
                 <h1>Velkommen til Otter!</h1>
             </div>
