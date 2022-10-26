@@ -9,16 +9,14 @@ export default function DatePost({ post }) {
     }
     // Her er post sendt med som parameter og indholdet vises herefter
     return (
-        <section className="client-row">
-            <Link to={'/dateitem/' + post.id}>
-                <article>
-                    <h3>{parse(post.title.rendered)}</h3>
-                    <div>{parse(post.excerpt.rendered)}</div>
-                </article>
-                <figure>
-                    <img src={image} alt={post.title.rendered} />
-                </figure>
-            </Link>
-        </section>
+        <div className="card">
+            <article>
+                <h3>{parse(post.title.rendered)}</h3>
+            </article>
+            <figure>
+                <img src={image} alt={post.title.rendered} />
+            </figure>
+            <Link to={'/dateitem/' + post.id}></Link>
+        </div>
     )
 }

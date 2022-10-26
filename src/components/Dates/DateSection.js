@@ -1,6 +1,7 @@
-import DatePost from "./DatePost";
-import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import DatePost from "./DatePost";
+import './datecards.css'
 
 export default function DateSection() {
     const [posts, setPosts] = useState([]);
@@ -29,11 +30,10 @@ export default function DateSection() {
     }, [location]);
 
     return (
-        <section>
-            <h2>DATE</h2>
-            <div className="portfoliogrid"> {posts.map(post => (
+        <>
+            <section className="card-list"> {posts.map(post => (
                 <DatePost key={post.id} post={post} />
-            ))}</div>
-        </section>
+            ))}</section>
+        </>
     );
 }

@@ -36,3 +36,9 @@
   background: hsl(var(--accent) / 0.8);
   color: hsl(var(--bg));
 }
+
+.wrapper {
+  margin-inline: 1rem;
+  padding-block: 1rem;
+  overflow-x: hidden;
+}
