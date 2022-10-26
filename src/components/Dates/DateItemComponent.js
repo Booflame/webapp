@@ -7,7 +7,7 @@ export default function DateItemComponent(props) {
     useEffect(() => {
         if (props.id === undefined) return
         async function getData(id) {
-            const res = await fetch(`https://webappindhold.frejavangilst.com/wp-json/wp/v2/posts/${id}?_embed`);
+            const res = await fetch(`https://webappindhold.frejavangilst.com/wp-json/wp/v2/posts/${id}?_embed&per_page=100`);
             const data = await res.json();
             console.log(data);
             setPost(data);
