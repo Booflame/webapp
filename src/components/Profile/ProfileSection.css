@@ -100,8 +100,12 @@
     grid-template-columns: 1fr 3fr;
     padding-top: 1.5em;
     padding-bottom: 1em;
-
     padding-left: 1em;
+  }
+
+  .achcard img {
+    border-radius: 10%;
+
   }
   
   .achbigcard {
