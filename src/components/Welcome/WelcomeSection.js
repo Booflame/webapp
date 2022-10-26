@@ -3,12 +3,16 @@ import './WelcomeSection.css'
 export default function WelcomeSection() {
     return (
         <section className='welcome'>
-            <img src="/images/otterblack1.svg" alt="Logo" />
+            <img src="/images/otterlogoweb.png" alt="Logo" />
             <div className='welcomebox'>
-                <h1>Velkommen til Otter!</h1>
+                <h2>Velkommen til Otter!</h2>
+                <h3>Vi hjælper dig med at komme på nye ideer, spændende aktiviteter og kreative udfordringer når du skal bruge tid med venner, din partner - eller dig selv!</h3>
             </div>
-            <NavLink to="/home" className="welcomebutton" id='wbutton'>Kom i gang! </NavLink>
-            <NavLink to="/login" className="welcomebutton" id='wbutton2'>Login</NavLink>
+            <NavLink to="/home" className="welcomebutton" id='wbutton'>START</NavLink>
+            <NavLink to="/login" className="welcomebutton" id='wbutton2'>LOGIN</NavLink>
+            <div className='opretlink'>
+                <h4>Har du ikke en bruger? Opret dig her.</h4>
+            </div>
         </section >
     );
 }

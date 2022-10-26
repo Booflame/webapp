@@ -1,5 +1,3 @@
-
-
 :root {
   --other: #1b7c9d;
   --header: #2b3a67;
@@ -14,13 +12,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5vmax;
+  gap: 4vmax;
   min-height: 100vh;
-  padding-block: 4em;
+  /* padding-block: 4em; */
 }
 
 .welcome img {
-  padding: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-bottom: 1em;
+
 }
 
 .welcomelogo {
@@ -34,22 +37,42 @@
   text-decoration: none;
   font-weight: bold;
   border-radius: 1em;
-  padding: 1em;
+  padding: 0.7em;
   margin-inline: 1em;
 }
 
 .welcomebox {
   border: solid 2px black;
   border-radius: 25px;
+  background-color: white;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-right: 1em;
+  padding-left: 1em;
+  text-align: center;
+
 }
 
-.welcomebox h1 {
+.welcomebox h3 {
   font-size: 18px;
+  font-family: poppins, sans-serif;
+font-weight: 500;
+font-style: normal;
 }
 
 #wbutton {
-  background-image: url(/public/images/texture.jpg);
+  background-color: var(--header);
 }
 #wbutton2 {
   background-color: var(--other);
+}
+
+.opretlink {
+  text-align: center;
+  
+}
+.opretlink h4 {
+  font-family: poppins, sans-serif;
+font-weight: 500;
+font-style: normal;
 }
