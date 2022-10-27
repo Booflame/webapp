@@ -3,6 +3,12 @@ body {
 
 }
 
+.home{
+    display: grid;
+    gap: 5vmax;
+    min-height: 70vh;
+}
+
 .scrolling-wrapper {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -12,15 +18,11 @@ body {
 .cardminde {
     display: inline-block;
     padding: 1em;
-
-
 }
 
 .scrolling-wrapper {
     -webkit-overflow-scrolling: touch;
 }
-
-
 
 .cardimg {
     width: 150px;
@@ -38,27 +40,29 @@ body {
 }
 
 .homebutton {
-    padding: 1rem;
+    padding: .5em 2em;
     border-radius: 45px;
     color: white;
     font-size: 2rem;
     text-align: center;
     text-decoration: none;
-}
 
-#hbutton {
     background-color: #1C3E77;
     box-shadow: 3px 12px 14px black;
-    width: 500px;
-    margin: 30%;
+    max-width: fit-content;
+    margin-inline: auto;
 }
 
 .ottericon {
     width: 30%;
-    margin: 30%;
-    height: auto;
+    margin-inline: auto;
 }
 
+
+.otterbutton {
+    display: grid;
+    justify-content: center;
+}
 
 .flexhomebutton {
     display: grid;

@@ -42,9 +42,9 @@ export default function HomeSection() {
             </div>
 
 
-            <div>
+            <div className='otterbutton'>
                 <img className="ottericon" src="/images/otter_icon.png" alt="otter icon"></img>
-                <NavLink to="/parameter" className='homebutton' id='hbutton'>START</NavLink>
+                <NavLink to="/parameter" className='homebutton'>START</NavLink>
 
             </div>
 
