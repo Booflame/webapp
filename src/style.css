@@ -1,14 +1,14 @@
 :root {
-  --_hue: 240;
+  --_hue: 207;
   --_size: 2rem;
-  --_radius: 0.2em;
+  --_radius: 0.8em;
   --_tspeed_fast: 150ms;
   --_tspeed_slow: 400ms;
   --_ttype_squish: cubic-bezier(0.86, -0.1, 0.27, 1.15);
 
   --bg: var(--_hue) 30% 94%;
   --txt: var(--_hue) 40% 5%;
-  --accent: var(--_hue) 55% 50%;
+  --accent: var(--_hue) 62% 67%;
   --muted: var(--_hue) 30% 99%;
 }
 
