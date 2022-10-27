@@ -35,8 +35,8 @@
   box-shadow: 0 0 0 0.2em hsl(var(--bg)), 0 0 0 0.4em hsl(var(--accent) / 0.8);
 }
 
-.form-input:focus ~ .form-label,
-.form-input:not(:placeholder-shown) ~ .form-label {
+.form-input:focus~.form-label,
+.form-input:not(:placeholder-shown)~.form-label {
   transform: translate3d(0, -3em, 0);
   background-color: hsl(var(--bg));
   color: hsl(var(--accent) / 0.8);
