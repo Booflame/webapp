@@ -21,23 +21,26 @@ export default function DatePost({ post }) {
 
     // Her er post sendt med som parameter og indholdet vises herefter
     return (
-        <div className="card">
-            <figure>
-                <img src={image} alt={post.title.rendered} />
-                <span className="tag-budget">{post.acf.budget[0]}</span>
-            </figure>
-            <article>
-                <div>
-                    <h3>{parse(post.title.rendered)}</h3>
-                    {parse(post.excerpt.rendered)}
-                </div>
-                <svg className={isActive ? 'card-icon-filled card-icon' : 'card-icon'} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 40" onClick={toggleClass}>
-                    <polygon id="fill" className="card-icon-fill" points="1.78 1.66 1.76 37.85 16.25 32.46 30.74 37.85 30.74 1.66 1.78 1.66"/>
-                    <path id="outline" d="M4.02,0C1.83,0,.02,1.81,.02,4l-.02,36,16-6,16,6V4c0-2.19-1.81-4-4-4H4.02Zm0,4H28v30.23l-12-4.5-12,4.5,.02-30.23Z"/>
-                </svg>
-            </article>
-            
-            <Link to={'/dateitem/' + post.id}></Link>
-        </div>
+        <>
+            <div className="card">
+                <figure>
+                    <img src={image} alt={post.title.rendered} />
+                    <span className="tag-budget">{post.acf.budget[0]}</span>
+                </figure>
+                <article>
+                    <div>
+                        <h3>{parse(post.title.rendered)}</h3>
+                        {parse(post.excerpt.rendered)}
+                    </div>
+                    <svg className={isActive ? 'card-icon-filled card-icon' : 'card-icon'} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 40" onClick={toggleClass}>
+                        <polygon id="fill" className="card-icon-fill" points="1.78 1.66 1.76 37.85 16.25 32.46 30.74 37.85 30.74 1.66 1.78 1.66"/>
+                        <path id="outline" d="M4.02,0C1.83,0,.02,1.81,.02,4l-.02,36,16-6,16,6V4c0-2.19-1.81-4-4-4H4.02Zm0,4H28v30.23l-12-4.5-12,4.5,.02-30.23Z"/>
+                    </svg>
+                </article>
+                <div>&#10094;</div>
+                <div>&#10095;</div>
+                <Link to={'/dateitem/' + post.id}>Vælg</Link>
+            </div>
+        </>
     )
 }

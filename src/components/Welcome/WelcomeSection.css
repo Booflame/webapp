@@ -6,7 +6,8 @@
 }
 
 .welcome {
-  background-image: url(/public/images/texture.jpg);
+  /* background-image: url(/public/images/texture.jpg); */
+  background-color: #d5eafb;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -39,8 +40,7 @@
   border-radius: 1em;
   padding: 0.7em;
   margin-inline: 1em;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
 
 
 .welcomebox {
@@ -64,9 +64,15 @@ font-style: normal;
 
 #wbutton {
   background-color: var(--header);
+  font-family: poppins, sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 #wbutton2 {
   background-color: var(--other);
+  font-family: poppins, sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .opretlink {

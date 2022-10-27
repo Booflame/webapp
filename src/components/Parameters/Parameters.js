@@ -10,10 +10,6 @@ export default function Parameter() {
 
     function HandleSubmit(e) {
         e.preventDefault()
-        sessionStorage.setItem("who", values.who)
-        sessionStorage.setItem("where", values.where)
-        sessionStorage.setItem("when", values.when)
-        sessionStorage.setItem("budget", values.budget)
         navigate("../date", {
             state: {
                 who: values.who,
