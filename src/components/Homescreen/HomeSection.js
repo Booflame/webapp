@@ -35,14 +35,16 @@ export default function HomeSection() {
 
             </div>
 
-            <div >'
-                <NavLink to="/parameter" className='homebutton' id='hbutton'>START</NavLink>
-
-            </div>
-
             <div className='welcomeh3'>
                 <h3>Klik på START for at generere en aktivitet </h3>
 
+
+            </div>
+
+
+            <div>
+                <img className="ottericon" src="/images/otter_icon.png" alt="otter icon"></img>
+                <NavLink to="/parameter" className='homebutton' id='hbutton'>START</NavLink>
 
             </div>
 

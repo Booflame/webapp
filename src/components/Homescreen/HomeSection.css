@@ -1,21 +1,24 @@
 body {
-  font-family: poppins, sans-serif;
+    font-family: poppins, sans-serif;
 
 }
+
 .scrolling-wrapper {
     overflow-x: scroll;
     overflow-y: hidden;
-    white-space: nowrap; }
-  
-    .cardminde {
-      display: inline-block;
-    padding: 1em;
-   
+    white-space: nowrap;
+}
 
-    }
-    .scrolling-wrapper {
-        -webkit-overflow-scrolling: touch;
-      }
+.cardminde {
+    display: inline-block;
+    padding: 1em;
+
+
+}
+
+.scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+}
 
 
 
@@ -30,19 +33,30 @@ body {
 }
 
 
+.button-container-start {
+    display: flex;
+}
+
 .homebutton {
-    display: block;
     padding: 1rem;
-    margin: 1rem;
     border-radius: 45px;
     color: white;
     font-size: 2rem;
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
 }
+
 #hbutton {
-    background-color: var(--other);
+    background-color: #1C3E77;
+    box-shadow: 3px 12px 14px black;
+    width: 500px;
+    margin: 30%;
+}
+
+.ottericon {
+    width: 30%;
+    margin: 30%;
+    height: auto;
 }
 
 
