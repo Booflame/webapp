@@ -50,7 +50,7 @@ h1 {
   display: flex;
   place-items: center;
   gap: 0.5em;
-  background-color: hsl(var(--accent));
+  background-color: #1C3E77;
   color: hsl(var(--bg));
   text-decoration: none;
   padding: 0.4em 1.4em;
@@ -90,4 +90,8 @@ h1 {
 
 .link_opret:visited {
   text-decoration: none;
+}
+
+.login-text {
+  color: #1C3E77;
 }

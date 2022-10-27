@@ -8,7 +8,7 @@ export default function LoginPage() {
             <img src="/images/otterlogoweb.png" alt="Logo" />
 
             <section className="container">
-                <h1>Login</h1>
+                <h1 className="login-text">LOGIN</h1>
                 <form className='login-form'>
                     <FormInput name="Brugernavn" type="email" />
                     <FormInput name="password" type="password" />
