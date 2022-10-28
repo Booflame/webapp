@@ -33,11 +33,34 @@ export default function DateSection() {
         getData();
     }, [location]);
 
+    const [current, setCurrent] = useState(0);
+    const length = posts.length;
+
+    function nextSlide () {  
+        setCurrent(current === length - 1 ? 0 : current + 1)
+        console.log("next nice")
+        console.log(current)
+    }
+    function prevSlide () {  
+        setCurrent(current === 0 ? length - 1 : current - 1)
+        console.log("prev nice")
+        console.log(current)
+    }
+
+    // if(!Array.isArray(posts) || posts.length <= 0) {
+    //     console.log("nice")
+    // }
+
+
     return (
         <>
-            <section className="card-list"> {posts.map(post => (
-                <DatePost key={post.id} post={post} />
+            <section className="card-list"> {posts.map((post, index) => (
+                <DatePost className={index === current ? "slide active" : "slide"} key={index} post={post} />
             ))}</section>
+            <div className="controlls">
+                <div onClick={prevSlide} className="slider-btn">&#10094;</div>
+                <div onClick={nextSlide} className="slider-btn">&#10095;</div>
+            </div>
         </>
     );
 }
