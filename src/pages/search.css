@@ -39,3 +39,7 @@
 .grid-container>article h2 {
     font-size: 15px;
 }
+
+.searchpage-title {
+    text-align: center;
+}
