@@ -1,6 +1,14 @@
 import './HomeSection.css'
 import { NavLink } from "react-router-dom";
+import Modal from "../Modal/Modal";
+import Modal1 from "../Modal/Modal1";
+import React, { useState } from "react"
+
+
 export default function HomeSection() {
+    const [show, setShow] = useState(false)
+
+
     return (
         <section className='home'>
 
@@ -8,26 +16,40 @@ export default function HomeSection() {
             <div className="scrolling-wrapper">
 
                 <div className="cardminde">
-                    <img className="cardimg" src="/images/memory.png" alt="Logo"></img>
-                    <h2 className="cardh2">Mit minde</h2>
+                    <div>
+                        <button className="minde-btn" onClick={() => setShow(true)}></button>
+                        <Modal onClose={() => setShow(false)} show={show} />
+                        <h2 className="cardh2">Mit Minde</h2>
+                    </div>
                 </div>
                 <div className="cardminde">
-                    <img className="cardimg" src="/images/memory1.png" alt="Logo"></img>
-                    <h2 className="cardh2">Trine Høj</h2>
+                    <div>
+                        <button className="minde-btn1" onClick={() => setShow(true)}></button>
+                        <Modal1 onClose={() => setShow(false)} show={show} />
+                        <h2 className="cardh2">Trine Høj</h2>
+                    </div>
                 </div>
                 <div className="cardminde">
-                    <img className="cardimg" src="/images/memory3.png" alt="Logo"></img>
-                    <h2 className="cardh2">Anders Olsen </h2>
+                    <div>
+                        <button className="minde-btn2" onClick={() => setShow(true)}></button>
+                        <Modal onClose={() => setShow(false)} show={show} />
+                        <h2 className="cardh2">Anders Olsen</h2>
+                    </div>
                 </div>
                 <div className="cardminde">
-                    <img className="cardimg" src="/images/memory4.png" alt="Logo"></img>
-                    <h2 className="cardh2">Sandra Zara</h2>
+                    <div>
+                        <button className="minde-btn3" onClick={() => setShow(true)}></button>
+                        <Modal onClose={() => setShow(false)} show={show} />
+                        <h2 className="cardh2">Sandra</h2>
+                    </div>
                 </div>
                 <div className="cardminde">
-                    <img className="cardimg" src="/images/memory5.png" alt="Logo"></img>
+                    <button className="minde-btn4" onClick={() => setShow(true)}></button>
+                    <Modal onClose={() => setShow(false)} show={show} />
                     <h2 className="cardh2">Jeppe Øster</h2>
                 </div>
             </div>
+
 
             <div className='welcomeh2'>
                 <h2>Velkommen</h2>
