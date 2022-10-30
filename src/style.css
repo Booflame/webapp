@@ -18,7 +18,13 @@
 }
 
 .wrapper {
-  padding-inline: 1rem;
+  padding-inline: 3rem;
   padding-block: 1rem;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+#root {
+  max-width: 500px;
+}
+#root:has(.botnav) {
+  margin-bottom: 70px;
 }

@@ -1,42 +1,41 @@
 .card-list {
   display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  gap: 2rem;
   position: relative;
+  min-height: 50vh;
+}
+
+.slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 300ms ease-in;
+}
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.slide.active + .slide {
+  opacity: 1;
+  transform: translateX(105%);
+}
+.slide:not(.active) {
+  transform: translateX(-105%);
 }
 
 .card {
   padding: 1em;
   border-radius: 1em;
-  position: relative;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-.card:not(:first-of-type) {
-  display: none;
-}
-
-.card:nth-of-type(2) {
-  display: block;
-  position: absolute;
-  left: 103%;
-  width: 100%;
-  height: 100%;
-}
-
-.card:last-of-type {
-  display: block;
-  position: absolute;
-  right: 103%;
-  width: 100%;
-  height: 100%;
 }
 
 .card figure {
   border-radius: 1em;
   overflow: hidden;
   position: relative;
+}
+.card figure img {
+  aspect-ratio: 5/4;
+  object-fit: cover;
 }
 
 .card figure::after {
@@ -52,12 +51,13 @@
 .card .tag-budget {
   display: inline-block;
   position: absolute;
-  right: 5px;
-  bottom: 5px;
+  right: 8px;
+  bottom: 8px;
   color: #fff;
-  background-color: #000;
-  padding: 0.3em 0.6em;
+  background-color: hsl(150, 100%, 36%);
+  padding: 0.4em 0.6em;
   border-radius: 1em;
+  line-height: 1;
 }
 
 .card article {
@@ -90,9 +90,9 @@
 }
 .card-btn {
   position: absolute;
-  bottom: -7%;
+  bottom: calc(2.2rem * -1);
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 100%);
   text-decoration: none;
   color: #000;
   background-color: gray;

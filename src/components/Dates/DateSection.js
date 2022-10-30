@@ -32,31 +32,41 @@ export default function DateSection() {
         }
         getData();
     }, [location]);
-
-    const [current, setCurrent] = useState(0);
+    
     const length = posts.length;
+    const [current, setCurrent] = useState(0);
+    const [next, setNext] = useState(1);
+    const [prev, setPrev] = useState(length - 1);
 
     function nextSlide () {  
         setCurrent(current === length - 1 ? 0 : current + 1)
-        console.log("next nice")
-        console.log(current)
+        setNext(next === length - 1 ? 0 : next + 1)
+        setPrev(prev === length - 1 ? 0 : prev + 1)
     }
     function prevSlide () {  
         setCurrent(current === 0 ? length - 1 : current - 1)
-        console.log("prev nice")
-        console.log(current)
+        setNext(next === 0 ? length - 1 : next - 1)
+        setPrev(prev === 0 ? length - 1 : prev - 1)
     }
-
-    // if(!Array.isArray(posts) || posts.length <= 0) {
-    //     console.log("nice")
-    // }
-
 
     return (
         <>
-            <section className="card-list"> {posts.map((post, index) => (
-                <DatePost className={index === current ? "slide active" : "slide"} key={index} post={post} />
-            ))}</section>
+            <section className="card-list"> {posts.map((post, index) => {
+                return(
+                    <div className={index === current ? "slide active" : "slide"} key={index}>
+                        {index === prev && (
+                            <DatePost post={post}/>
+                        )}
+                        {index === current && (
+                            <DatePost post={post} />
+                        )}
+                        {index === next && (
+                            <DatePost post={post} />
+                        )}
+                    </div>
+                )})}
+            </section>
+
             <div className="controlls">
                 <div onClick={prevSlide} className="slider-btn">&#10094;</div>
                 <div onClick={nextSlide} className="slider-btn">&#10095;</div>
