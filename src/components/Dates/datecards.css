@@ -8,7 +8,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  transition: transform 300ms ease-in;
 }
 .slide.active {
   opacity: 1;
