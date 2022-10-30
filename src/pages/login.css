@@ -98,11 +98,16 @@ h1 {
 
 .login-text {
   color: #1C3E77;
+  text-align: center;
 }
 
 .login-btn {
   text-decoration: none;
 }
+
+
+
+
 
 
 /* CSS til opret-page (Laura)*/
@@ -127,8 +132,9 @@ h1 {
 
 .opret-text {
   color: #1C3E77;
-  margin: 0;
+  margin-left: 40px;
   text-align: center;
+  font-size: 35px;
 }
 
 .opret-form {
