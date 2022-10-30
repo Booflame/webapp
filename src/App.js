@@ -11,6 +11,7 @@ import TestPage from './pages/TestPage';
 import DatePage from './pages/DatePage';
 import ErrorPage from './pages/ErrorPage';
 import SearchPage from './pages/SearchPage';
+import OpretPage from './pages/OpretPage';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/date' element={<DatePage />} />
         <Route path='/error' element={<ErrorPage />} />
         <Route path='/search' element={<SearchPage />} />
+        <Route path='/opret' element={<OpretPage />} />
       </Routes>
     </>
   );

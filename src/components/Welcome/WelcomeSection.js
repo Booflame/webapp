@@ -7,7 +7,7 @@ export default function WelcomeSection() {
             <NavLink to="/home" className="welcomebutton" id='wbutton'>START</NavLink>
             <NavLink to="/login" className="welcomebutton" id='wbutton2'>LOGIN</NavLink>
             <div className='opretlink'>
-                <h4>Har du ikke en bruger? Opret dig her.</h4>
+                <h4>Har du ikke en bruger? Opret dig <NavLink to="/opret">her.</NavLink></h4>
             </div>
         </section >
     );

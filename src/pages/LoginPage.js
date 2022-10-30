@@ -13,10 +13,10 @@ export default function LoginPage() {
                     <FormInput name="Brugernavn" type="email" />
                     <FormInput name="password" type="password" />
 
-                    <button className="form-btn">Login</button>
+                    <NavLink to="/home" className="login-btn"><button className="form-btn">LOGIN</button></NavLink>
                 </form>
                 <div className='opretlink'>
-                    <h4>Har du ikke en bruger? Opret dig <NavLink to="/login" className="link_opret">her.</NavLink></h4>
+                    <h4>Har du ikke en bruger? Opret dig <NavLink to="/opret" className="link_opret">her.</NavLink></h4>
                 </div>
             </section>
 
