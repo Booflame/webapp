@@ -1,6 +1,7 @@
 import BotNav from '../BottomNavigation/BotNav';
 import Header from '../Header/Header';
 import './ErrorSection.css'
+import { NavLink } from 'react-router-dom';
 export default function ErrorSection() {
     return (
         <section>
@@ -11,7 +12,7 @@ export default function ErrorSection() {
             <img src="/images/404.png" alt="Fejl 404"></img>
             <br></br>
             <br></br>
-            <a href="-" className='errorbutton' id='wbutton'>Startside</a>
+            <NavLink to="/home" className="errorbutton"><button className="form-btn">Startside</button></NavLink>
 
             <BotNav></BotNav>
         </section >
