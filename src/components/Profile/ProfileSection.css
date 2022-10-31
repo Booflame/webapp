@@ -44,33 +44,33 @@
   backface-visibility: hidden;
 }
 
-  .friendsbutton {
-   
-        padding: 1rem;
-        margin: 1rem;
-        border-radius: 45px;
-        color: white;
-        font-size: 1rem;
-        text-align: center;
-        text-decoration: none;
-        font-weight: bold;
-        display: grid;
-        justify-content: center;
-  }
-  .logoutbutton {
-   
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 45px;
-    color: white;
-    font-size: 1rem;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    display: grid;
-    justify-content: center;
-    background-color: var(--other);
+.friendsbutton {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 45px;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: grid;
+  justify-content: center;
 }
+
+.logoutbutton {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 45px;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: grid;
+  justify-content: center;
+  background-color: var(--other);
+}
+
 #lobutton {
   background-color: var(--other);
   font-family: poppins, sans-serif;

@@ -14,9 +14,7 @@ export default function ProfileSection() {
                         <h4>9</h4>
                         <h4>Følgere</h4>
                         <h4>Følger</h4>
-
                     </div>
-
                 </div>
                 <div>
                     <div className="profile-container">
