@@ -1,95 +1,89 @@
 .profile {
-    display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-top: 1em;
-
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 1em;
 }
 .profilefollow {
-    color: var(--other);
-    text-align: center;
-    display: grid;
+  color: var(--other);
+  text-align: center;
+  display: grid;
   grid-template-columns: 1fr 1fr;
-
 }
 
 #profilepic {
-    width: 80%;
-    display: block;
+  width: 80%;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
+.profile-container {
+  position: relative;
+  width: 80%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
 
+.profile-container:hover .image {
+  opacity: 0.3;
+}
 
-.container {
-    position: relative;
-    width: 80%;
-    display:table-cell; vertical-align:middle; text-align:center
-  }
-  
-  .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
-  
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .container:hover .image {
-    opacity: 0.3;
-  }
-  
-  .container:hover .middle {
-    opacity: 1;
-  }
-  
-  .text {
-    color: white;
-    font-size: 42px;
-    padding: 16px 32px;
-  }
+.profile-container:hover .middle {
+  opacity: 1;
+}
 
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
 
-  .friendsbutton {
-   
-        padding: 1rem;
-        margin: 1rem;
-        border-radius: 45px;
-        color: white;
-        font-size: 1rem;
-        text-align: center;
-        text-decoration: none;
-        font-weight: bold;
-        display: grid;
-        justify-content: center;
-  }
-  .logoutbutton {
-   
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 45px;
-    color: white;
-    font-size: 1rem;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    display: grid;
-    justify-content: center;
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  color: white;
+  font-size: 42px;
+  padding: 16px 32px;
+}
+
+.friendsbutton {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 45px;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: grid;
+  justify-content: center;
+}
+.logoutbutton {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 45px;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: grid;
+  justify-content: center;
 }
 #lobutton {
   background-color: var(--other);
@@ -99,46 +93,43 @@
   box-shadow: 4px 8px 10px black;
 }
 
-  .mindesection {
-    background-color: white;
-    padding: 1em;
-  }
+.mindesection {
+  background-color: white;
+  padding: 1em;
+}
 
-  .mindeflex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.mindeflex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-  }
+.achsection {
+  background-color: white;
+  padding: 1em;
+}
 
-  .achsection {
-    background-color: white;
-    padding: 1em;
+.achcard {
+  transition: 0.3s;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
 
-  }
+.achcard img {
+  border-radius: 10%;
+}
 
-  .achcard {
-    transition: 0.3s;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    padding-top: 1.5em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-  }
+.achbigcard {
+  border-radius: 20px; /* 5px rounded corners */
+  background-color: rgb(233, 228, 228);
+  margin-top: 1em;
+  border: 2px solid black;
+}
 
-  .achcard img {
-    border-radius: 10%;
-
-  }
-  
-  .achbigcard {
-    border-radius: 20px; /* 5px rounded corners */
-    background-color: rgb(233, 228, 228);
-    margin-top: 1em;
-    border: 2px solid black;
-  }
-
-  .achtext {
-    text-align: left;
-    padding-left: 1em;
-    padding-right: 0.75em;
-  }
+.achtext {
+  text-align: left;
+  padding-left: 1em;
+  padding-right: 0.75em;
+}
