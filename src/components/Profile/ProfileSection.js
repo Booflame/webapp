@@ -28,8 +28,9 @@ export default function ProfileSection() {
                 </div>
             </section>
 
-
-            <a href="-" className='friendsbutton' id='wbutton'>Tilføj venner</a>
+            <NavLink to="/error" className='friendsbutton' id='wbutton'>
+                Tilføj venner
+            </NavLink>
 
             <section className='mindesection'>
                 <h2>Mine seneste minder</h2>
@@ -88,14 +89,13 @@ export default function ProfileSection() {
 
                 </div>
 
+                <NavLink to="/" className='logoutbutton' id='lobutton'>
+                    Log ud
+                </NavLink>
 
 
             </section>
 
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
 
         </section >
     );

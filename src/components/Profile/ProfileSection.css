@@ -19,6 +19,7 @@
     display: block;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 
@@ -26,6 +27,7 @@
 .container {
     position: relative;
     width: 80%;
+    display:table-cell; vertical-align:middle; text-align:center
   }
   
   .image {
@@ -76,6 +78,26 @@
         display: grid;
         justify-content: center;
   }
+  .logoutbutton {
+   
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 45px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+}
+#lobutton {
+  background-color: var(--other);
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-shadow: 4px 8px 10px black;
+}
 
   .mindesection {
     background-color: white;
