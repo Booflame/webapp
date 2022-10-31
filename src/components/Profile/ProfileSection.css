@@ -64,7 +64,7 @@
   backface-visibility: hidden;
 }
 
-.friendsbutton {
+.profile-btn {
   padding: 1rem;
   margin: 1rem;
   border-radius: 45px;
@@ -75,28 +75,14 @@
   font-weight: bold;
   display: grid;
   justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.logoutbutton {
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 45px;
-  color: white;
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  display: grid;
-  justify-content: center;
-  background-color: var(--other);
+.darkblue-btn {
+  background-color: var(--header);
 }
-
-#lobutton {
+.lightblue-btn {
   background-color: var(--other);
-  font-family: poppins, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  box-shadow: 4px 8px 10px black;
 }
 
 .mindesection {

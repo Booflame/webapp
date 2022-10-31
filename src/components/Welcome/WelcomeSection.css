@@ -1,5 +1,5 @@
 :root {
-  --other: #77B1DF;
+  --other: #77b1df;
   --header: #2b3a67;
   --bgcolor: #3e885b;
   --white: #f1f5f1;
@@ -24,7 +24,6 @@
   width: 70%;
 }
 
-
 .welcomebutton {
   color: white;
   font-size: 2rem;
@@ -34,30 +33,22 @@
   border-radius: 1em;
   padding: 0.7em;
   margin-inline: 1em;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-
-
-
-#wbutton {
-  background-color: var(--header);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   font-family: poppins, sans-serif;
   font-weight: 400;
   font-style: normal;
-  box-shadow: 4px 8px 10px black;
+}
+
+#wbutton {
+  background-color: var(--header);
 }
 
 #wbutton2 {
   background-color: var(--other);
-  font-family: poppins, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  box-shadow: 4px 8px 10px black;
 }
 
 .opretlink {
   text-align: center;
-
 }
 
 .opretlink h4 {
@@ -65,5 +56,4 @@
   font-weight: 500;
   font-style: normal;
   color: var(--header);
-
 }

@@ -29,7 +29,7 @@ export default function ProfileSection() {
                 </div>
             </section>
 
-            <NavLink to="/error" className='friendsbutton' id='wbutton'>
+            <NavLink to="/error" className='profile-btn darkblue-btn'>
                 Tilføj venner
             </NavLink>
 
@@ -76,12 +76,12 @@ export default function ProfileSection() {
                         </div>
                     </div>
                     <hr></hr>
-                    <NavLink to="/error" className='friendsbutton' id='wbutton'>
+                    <NavLink to="/error" className='profile-btn darkblue-btn'>
                         Se flere
                     </NavLink>
                 </div>
 
-                <NavLink to="/" className='logoutbutton' id='lobutton'>
+                <NavLink to="/" className='profile-btn lightblue-btn'>
                     Log ud
                 </NavLink>
 

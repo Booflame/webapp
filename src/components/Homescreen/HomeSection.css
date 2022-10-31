@@ -45,11 +45,10 @@ body {
   font-size: 2rem;
   text-align: center;
   text-decoration: none;
-
   background-color: #1c3e77;
-  box-shadow: 3px 12px 14px black;
   max-width: fit-content;
   margin-inline: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .ottericon {
@@ -79,50 +78,32 @@ body {
 
 /* Modal CSS til home-section, af Laura */
 .minde-btn {
-  background-image: url(/public/images/memory.png);
   background-size: cover;
-  border: solid 3px #1C3E77;
+  border: solid 2px #1c3e77;
   border-radius: 25px;
   color: white;
   padding: 40px 60px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
 }
 
 .minde-btn1 {
-  background-image: url(/public/images/memory1.png);
-  background-size: cover;
-  border: solid 3px #1C3E77;
-  border-radius: 25px;
-  padding: 40px 60px;
-  display: inline-block;
+  background-image: url(/public/images/memory.png);
 }
 
 .minde-btn2 {
-  background-image: url(/public/images/memory3.png);
-  background-size: cover;
-  border: solid 3px #1C3E77;
-  border-radius: 25px;
-  padding: 40px 60px;
-  display: inline-block;
+  background-image: url(/public/images/memory1.png);
 }
 
 .minde-btn3 {
-  background-image: url(/public/images/memory4.png);
-  background-size: cover;
-  border: solid 3px #1C3E77;
-  border-radius: 25px;
-  padding: 40px 60px;
-  display: inline-block;
+  background-image: url(/public/images/memory3.png);
 }
 
 .minde-btn4 {
+  background-image: url(/public/images/memory4.png);
+}
+
+.minde-btn5 {
   background-image: url(/public/images/memory5.png);
-  background-size: cover;
-  border: solid 3px #1C3E77;
-  border-radius: 25px;
-  padding: 40px 60px;
-  display: inline-block;
 }
