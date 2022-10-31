@@ -19,7 +19,7 @@ export default function ProfileSection() {
 
                 </div>
                 <div>
-                    <div className="container">
+                    <div className="profile-container">
                         <img src="/images/profilepic.png" alt="Avatar" className="image" ></img>
                         <div className="middle">
                             <div className="text">+</div>
@@ -47,13 +47,9 @@ export default function ProfileSection() {
                 </section>
             </section>
 
-
             <section className='achsection'>
                 <h2>Achievements</h2>
                 <h3>Mine seneste achievements</h3>
-
-
-
                 <div className='achbigcard'>
                     <div className="achcard">
                         <img src="/images/ach1.png" alt="Avatar"></img>
@@ -71,7 +67,6 @@ export default function ProfileSection() {
                         </div>
                     </div>
                     <hr></hr>
-
                     <div className="achcard">
                         <img src="/images/ach3.png" alt="Avatar"></img>
                         <div className="achtext">
@@ -83,10 +78,6 @@ export default function ProfileSection() {
                     <NavLink to="/error" className='friendsbutton' id='wbutton'>
                         Se flere
                     </NavLink>
-
-
-
-
                 </div>
 
                 <NavLink to="/" className='logoutbutton' id='lobutton'>
