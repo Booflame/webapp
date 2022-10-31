@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import './BackOpret.css';
 
+// Her ses en onClick funktion, hvor navigate bruges til at navigere 1 side tilbage når man trykker på billedet
 export const BackOpret = () => {
     let navigate = useNavigate();
     return (
