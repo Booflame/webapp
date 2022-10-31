@@ -8,7 +8,7 @@ export default function SearchPage() {
 
     useEffect(() => {
         async function getData() {
-            const res = await fetch("https://webappindhold.frejavangilst.com/wp-json/wp/v2/posts/?_embed&?include=17,14&;per_page=100");
+            const res = await fetch("https://webappindhold.frejavangilst.com/wp-json/wp/v2/posts/?_embed&include=17,14&;per_page=100");
             const data = await res.json();
             console.log(data);
             setPosts(data);
