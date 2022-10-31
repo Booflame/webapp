@@ -1,3 +1,5 @@
+/* Freja */
+
 .profile {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -5,6 +7,7 @@
   padding-right: 1em;
   margin-top: 1em;
 }
+
 .profilefollow {
   color: var(--other);
   text-align: center;
@@ -33,6 +36,23 @@
 
 .profile-container:hover .middle {
   opacity: 1;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  color: white;
+  font-size: 42px;
+  padding: 16px 32px;
 }
 
 .image {
@@ -108,7 +128,8 @@
 }
 
 .achbigcard {
-  border-radius: 20px; /* 5px rounded corners */
+  border-radius: 20px;
+  /* 5px rounded corners */
   background-color: rgb(233, 228, 228);
   margin-top: 1em;
   border: 2px solid black;

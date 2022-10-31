@@ -1,5 +1,8 @@
 import './ProfileSection.css'
 import { NavLink } from 'react-router-dom';
+
+/* Freja */
+
 export default function ProfileSection() {
     return (
         <section >
