@@ -4,6 +4,8 @@ import "./search.css"
 import CategoryOne from "../components/Search/CategoryOne"
 import CategoryTwo from "../components/Search/CategoryTwo"
 
+/* Laura */
+
 export default function SearchPage() {
 
 

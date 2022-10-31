@@ -1,3 +1,5 @@
+/* Nichlas */
+
 .form-switches {
   max-width: 500px;
   margin-inline: auto;
@@ -6,11 +8,13 @@
   justify-content: center;
   align-items: center;
 }
+
 .form-switches p {
   text-align: center;
   margin-block: 1rem;
   font-weight: bolder;
 }
+
 .radio-group-wrapper {
   border-radius: 25px;
   display: inline-flex;
@@ -19,8 +23,9 @@
   gap: 1vmax;
   background-color: hsl(0 10% 90%);
   padding: 0.25em;
-  
+
 }
+
 .parameter-btn {
   border: none;
   cursor: pointer;

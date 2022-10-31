@@ -3,6 +3,8 @@ import FormInput from '../components/Input/Input';
 import { NavLink } from "react-router-dom";
 import { BackLogin } from '../components/BackLanding/BackLogin';
 
+/* Freja, Nichlas & Laura */
+
 export default function LoginPage() {
     return (
         <section className="login">

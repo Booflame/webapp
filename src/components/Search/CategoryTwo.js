@@ -3,6 +3,9 @@ import "../../pages/search.css"
 import "./PostItem"
 import PostItem from "./PostItem";
 
+/* Laura */
+/* Her fetcher jeg data fra vores headless wordpress CMS og udvælger enkelte posts ved targeting af deres ID i linket  */
+
 export default function SearchPage() {
     const [posts, setPosts] = useState([]);
 

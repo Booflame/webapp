@@ -2,6 +2,7 @@ import React from 'react'
 import './Modal.css'
 
 /* Laura - https://medium.com/tinyso/how-to-create-a-modal-component-in-react-from-basic-to-advanced-a3357a2a716a */
+/* Her har vi et Modal komponent, der åbner og lukker sig ved onClick.  */
 
 const Modal = props => {
     if (!props.show) {

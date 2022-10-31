@@ -1,5 +1,7 @@
 import ErrorSection from "../components/Error/ErrorSection";
 
+/* Freja */
+
 export default function ErrorPage() {
     return (
 
