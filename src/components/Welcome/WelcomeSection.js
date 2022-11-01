@@ -1,5 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import './WelcomeSection.css'
+
+// Freja & __
+
 export default function WelcomeSection() {
     return (
         <section className='welcome'>

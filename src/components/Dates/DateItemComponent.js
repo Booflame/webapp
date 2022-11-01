@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import DateFullItem from "./DateFullItem";
 
+
+// Freja & Nichlas
 export default function DateItemComponent(props) {
     const [post, setPost] = useState(undefined);
 

@@ -4,6 +4,8 @@ import Modal from "../Modal/Modal";
 import Modal1 from "../Modal/Modal1";
 import React, { useState } from "react"
 
+// Freja & Laura
+
 export default function HomeSection() {
     const [show, setShow] = useState(false)
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../../pages/search.css"
+import "./search.css"
 import "./PostItem"
 import PostItem from "./PostItem";
 

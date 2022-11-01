@@ -1,5 +1,6 @@
 import parse from "html-react-parser";
 
+// Freja & Nichlas 
 export default function DateFullItem({ post }) {
 
     let image = "https://avatars.githubusercontent.com/u/90176537?v=4";
