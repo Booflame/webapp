@@ -1,6 +1,5 @@
 import parse from "html-react-parser";
 
-
 export default function PostItem({ post }) {
     let image = "https://avatars.githubusercontent.com/u/90176537?v=4";
 
