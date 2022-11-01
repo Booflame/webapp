@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import DateFullItem from "./DateFullItem";
 
+
+// Freja & Nichlas
 export default function DateItemComponent(props) {
     const [post, setPost] = useState(undefined);
 
@@ -19,10 +21,8 @@ export default function DateItemComponent(props) {
     if (post === undefined) return <section>post er ikke angivet</section>
 
     return (
-        <section>
-            <h2>Portfolio</h2>
+        <>
             <DateFullItem key={post.id} post={post} />
-        </section>
-
+        </>
     );
 }

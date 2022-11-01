@@ -1,5 +1,7 @@
 import './Input.css';
 
+// Nichlas
+
 export default function Input({name, type}){
     return(
 
