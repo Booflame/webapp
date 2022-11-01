@@ -1,7 +1,7 @@
 import React from 'react';
 import './reset.css';
 import './style.css';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
@@ -12,7 +12,7 @@ import DatePage from './pages/DatePage';
 import ErrorPage from './pages/ErrorPage';
 import SearchPage from './pages/SearchPage';
 import OpretPage from './pages/OpretPage';
-import DateItem from './pages/DatePage';
+import DateItemPage from './pages/DateItemPage';
 
 
 function App() {
@@ -29,8 +29,8 @@ function App() {
         <Route path='/error' element={<ErrorPage />} />
         <Route path='/search' element={<SearchPage />} />
         <Route path='/opret' element={<OpretPage />} />
-        <Route path="/home/:ItemId" element={<DateItem />} />
-
+        <Route path="/home/:ItemId" element={<DateItemPage />} />
+        <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
     </>
   );
