@@ -9,7 +9,6 @@ export default function DatePost({ post }) {
         image = post._embedded["wp:featuredmedia"][0].source_url;
     }
 
-
     const [classtoggle, setClass] = useState(false);
 
     const toggleClass = () => {
