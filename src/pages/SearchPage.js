@@ -18,12 +18,27 @@ export default function SearchPage() {
                 <div className="tag-links"><a href="#selvforkælelse">Selvforkælelse</a></div>
                 <div className="tag-links"><a href="#efterår">Efterår</a></div>
                 <div className="tag-links"><a href="#fest">Fest</a></div>
+                <div className="tag-links"><a href="#sport">Sport</a></div>
+                <div className="tag-links"><a href="#romantisk">Romantisk</a></div>
+                <div className="tag-links"><a href="#udendørs">Udendørs</a></div>
+                <div className="tag-links"><a href="#gratis">Gratis</a></div>
+                <div className="tag-links"><a href="#opskrifter">Opskrifter</a></div>
             </div>
             <div className="searchpage-subtitle" id="efterår"><h2>Otters udvalgte efterårsaktiviteter</h2></div>
             <CategoryOne></CategoryOne>
             <div className="searchpage-subtitle" id="selvforkælelse"><h2>Tid til selvforkælelse</h2></div>
             <CategoryTwo></CategoryTwo>
             <div className="searchpage-subtitle" id="fest"><h2>Ideer til fester</h2></div>
+            <CategoryTwo></CategoryTwo>
+            <div className="searchpage-subtitle" id="sport"><h2>Sportsaktiviteter</h2></div>
+            <CategoryTwo></CategoryTwo>
+            <div className="searchpage-subtitle" id="romantisk"><h2>Romantiske dates</h2></div>
+            <CategoryTwo></CategoryTwo>
+            <div className="searchpage-subtitle" id="udendørs"><h2>Udendørsaktiviteter</h2></div>
+            <CategoryTwo></CategoryTwo>
+            <div className="searchpage-subtitle" id="gratis"><h2>Intet budget? Intet problem</h2></div>
+            <CategoryTwo></CategoryTwo>
+            <div className="searchpage-subtitle" id="opskrifter"><h2>Lækre opskrifter</h2></div>
             <BotNav></BotNav>
         </>
     )
