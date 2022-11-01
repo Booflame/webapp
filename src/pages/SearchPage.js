@@ -25,8 +25,6 @@ export default function SearchPage() {
                 <div className="tag-links"><a href="#sport">Sport</a></div>
                 <div className="tag-links"><a href="#romantisk">Romantisk</a></div>
                 <div className="tag-links"><a href="#udendørs">Udendørs</a></div>
-                <div className="tag-links"><a href="#gratis">Gratis</a></div>
-                <div className="tag-links"><a href="#opskrifter">Opskrifter</a></div>
             </div>
             <div className="searchpage-subtitle" id="efterår"><h2>Otters udvalgte efterårsaktiviteter</h2></div>
             <CategoryOne></CategoryOne>
@@ -40,8 +38,6 @@ export default function SearchPage() {
             <CategoryFive></CategoryFive>
             <div className="searchpage-subtitle" id="udendørs"><h2>Udendørsaktiviteter</h2></div>
             <CategorySix></CategorySix>
-            <div className="searchpage-subtitle" id="gratis"><h2>Intet budget? Intet problem</h2></div>
-            <div className="searchpage-subtitle" id="opskrifter"><h2>Lækre opskrifter</h2></div>
             <BotNav></BotNav>
         </>
     )
