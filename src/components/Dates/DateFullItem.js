@@ -1,5 +1,6 @@
 import parse from "html-react-parser";
 
+// Freja & Nichlas 
 export default function DateFullItem({ post }) {
 
     return (

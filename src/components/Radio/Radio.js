@@ -1,6 +1,8 @@
 import './radio.css';
 
-export default function Radio({name, group, value}) {
+// Nichlas
+
+export default function Radio({ name, group, value }) {
 
     return (
         <div className="radio-wrapper">

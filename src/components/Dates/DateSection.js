@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import DatePost from "./DatePost";
 import './datecards.css'
 
+// Nichlas
 export default function DateSection() {
     const [posts, setPosts] = useState([]);
     const location = useLocation();
@@ -21,10 +22,10 @@ export default function DateSection() {
             const filterBudget = location.state.budget.toLowerCase()
 
             const filterData = data
-            .filter(e => e.acf.who.includes(filterWho))
-            .filter(e => e.acf.where.includes(filterWhere))
-            .filter(e => e.acf.time.includes(filterWhen))
-            .filter(e => e.acf.budget.includes(filterBudget))
+                .filter(e => e.acf.who.includes(filterWho))
+                .filter(e => e.acf.where.includes(filterWhere))
+                .filter(e => e.acf.time.includes(filterWhen))
+                .filter(e => e.acf.budget.includes(filterBudget))
 
             console.log(data);
             console.log(filterData);
@@ -32,18 +33,18 @@ export default function DateSection() {
         }
         getData();
     }, [location]);
-    
+
     const length = posts.length;
     const [current, setCurrent] = useState(0);
     const [next, setNext] = useState(1);
     const [prev, setPrev] = useState(length - 1);
 
-    function nextSlide () {  
+    function nextSlide() {
         setCurrent(current === length - 1 ? 0 : current + 1)
         setNext(next === length - 1 ? 0 : next + 1)
         setPrev(prev === length - 1 ? 0 : prev + 1)
     }
-    function prevSlide () {  
+    function prevSlide() {
         setCurrent(current === 0 ? length - 1 : current - 1)
         setNext(next === 0 ? length - 1 : next - 1)
         setPrev(prev === 0 ? length - 1 : prev - 1)
@@ -52,10 +53,10 @@ export default function DateSection() {
     return (
         <>
             <section className="card-list"> {posts.map((post, index) => {
-                return(
+                return (
                     <div className={index === current ? "slide active" : "slide"} key={index}>
                         {index === prev && (
-                            <DatePost post={post}/>
+                            <DatePost post={post} />
                         )}
                         {index === current && (
                             <DatePost post={post} />
@@ -64,7 +65,8 @@ export default function DateSection() {
                             <DatePost post={post} />
                         )}
                     </div>
-                )})}
+                )
+            })}
             </section>
 
             <div className="controlls">
