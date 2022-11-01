@@ -13,12 +13,10 @@ export default function ErrorSection() {
             <Header></Header>
             <br></br>
             <br></br>
-
             <img src="/images/404.png" alt="Fejl 404"></img>
             <br></br>
             <br></br>
             <NavLink to="/home" className="profile-btn lightblue-btn">Startside</NavLink>
-
             <BotNav></BotNav>
         </section >
     );
