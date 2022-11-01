@@ -19,8 +19,7 @@ export default function DatePost({ post }) {
     if (post.acf.budget[0].toLowerCase() === "none"){
         post.acf.budget[0] = "gratis";
     }
-
-    // Her er post sendt med som parameter og indholdet vises herefter
+    
     return (
         <>
             <div className="card">
@@ -29,7 +28,7 @@ export default function DatePost({ post }) {
                     <span className="tag-budget">{post.acf.budget[0]}</span>
                 </figure>
                 <article>
-                    <div>
+                    <div className="card-text">
                         <h3>{parse(post.title.rendered)}</h3>
                         {parse(post.excerpt.rendered)}
                     </div>
@@ -38,8 +37,8 @@ export default function DatePost({ post }) {
                         <path id="outline" d="M4.02,0C1.83,0,.02,1.81,.02,4l-.02,36,16-6,16,6V4c0-2.19-1.81-4-4-4H4.02Zm0,4H28v30.23l-12-4.5-12,4.5,.02-30.23Z"/>
                     </svg>
                 </article>
-                <Link className="card-btn" to={`/dateitem/${post.id}`}>Vælg</Link>
             </div>
+            <Link className="card-btn" to={`/home/${post.id}`}>Vælg</Link>
         </>
     )
 }

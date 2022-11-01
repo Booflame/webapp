@@ -1,7 +1,9 @@
+/* nichlas */
+
 .card-list {
   display: flex;
   position: relative;
-  min-height: 50vh;
+  height: 50vh;
 }
 
 .slide {
@@ -25,6 +27,7 @@
   padding: 1em;
   border-radius: 1em;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  overflow: hidden;
 }
 
 .card figure {
@@ -69,10 +72,18 @@
   align-items: flex-start;
   margin-block-start: 0.5em;
 }
-
-.card h3 {
+.card-text {
+  max-width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.card-text h3 {
   line-height: 1.1;
   margin-block-end: 0.4em;
+}
+.card-text p {
+  overflow: hidden;
+  height: 5rem;
 }
 
 .card .card-icon {
@@ -89,7 +100,7 @@
 }
 .card-btn {
   position: absolute;
-  bottom: calc(2.2rem * -1);
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, 100%);
   text-decoration: none;

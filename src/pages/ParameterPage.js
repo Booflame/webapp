@@ -8,6 +8,7 @@ export default function ParameterPage() {
     return (
         <>
             <Header />
+            <h2 className='parameter-heading' >Vælg de kriterier din <span className='heading-underline'>date</span> skal bestå af</h2>
             <Parameter />
             <BotNav />
         </>

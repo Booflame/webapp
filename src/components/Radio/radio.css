@@ -1,5 +1,6 @@
 .radio-wrapper input {
   display: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .radio-wrapper input:checked ~ label {
   background-color: hsl(220 49% 69%);
@@ -14,4 +15,5 @@
   cursor: pointer;
   font-family: "Inter", sans-serif;
   transition: background-color 200ms ease;
+  -webkit-tap-highlight-color: transparent;
 }
