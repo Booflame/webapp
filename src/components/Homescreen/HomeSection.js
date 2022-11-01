@@ -11,6 +11,7 @@ export default function HomeSection() {
     return (
         <section className='home'>
             {/* https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6 */}
+            {/* Her er en mindesektion sat op som horizontal scroll, hvor man kan trykke på hvert enkelt mindekort for at se yderligere ved hjælp af setShow og onClose */}
             <div className="scrolling-wrapper">
                 <div className="cardminde">
                     <div>
