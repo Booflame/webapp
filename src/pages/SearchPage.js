@@ -41,9 +41,6 @@ export default function SearchPage() {
             <CategoryFive></CategoryFive>
             <div className="searchpage-subtitle" id="udendørs"><h2>Udendørsaktiviteter</h2></div>
             <CategorySix></CategorySix>
-            <div className="searchpage-subtitle" id="gratis"><h2>Intet budget? Intet problem</h2></div>
-            <CategoryTwo></CategoryTwo>
-            <div className="searchpage-subtitle" id="opskrifter"><h2>Lækre opskrifter</h2></div>
             <BotNav></BotNav>
         </>
     )
