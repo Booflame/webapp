@@ -26,5 +26,5 @@
   max-width: 500px;
 }
 #root:has(.botnav) {
-  margin-bottom: 70px;
+  margin-bottom: 90px;
 }
