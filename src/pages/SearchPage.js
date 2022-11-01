@@ -10,7 +10,6 @@ import CategoryFour from "../components/Search/CategoryFour"
 
 export default function SearchPage() {
 
-
     return (
         <>
             <Header></Header>
@@ -41,6 +40,7 @@ export default function SearchPage() {
             <div className="searchpage-subtitle" id="gratis"><h2>Intet budget? Intet problem</h2></div>
             <CategoryTwo></CategoryTwo>
             <div className="searchpage-subtitle" id="opskrifter"><h2>Lækre opskrifter</h2></div>
+            <CategoryTwo></CategoryTwo>
             <BotNav></BotNav>
         </>
     )
