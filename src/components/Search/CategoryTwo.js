@@ -19,7 +19,6 @@ export default function SearchPage() {
         getData();
     }, []);
 
-
     return (
         <>
             <section className="grid-container">
