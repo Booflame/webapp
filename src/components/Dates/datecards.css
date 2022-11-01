@@ -123,3 +123,43 @@
   border-radius: 50%;
   font-size: 2rem;
 }
+.big-card {
+  width: 90%;
+  margin-inline: auto;
+  padding-block: 1rem;
+}
+.big-card img {
+  aspect-ratio: 5/4;
+  object-fit: cover;
+  padding-block-end: 1rem;
+}
+.big-card h2,
+.big-card p {
+  padding-block-end: 1rem;
+}
+.big-card a {
+  color: black;
+  display: inline-block;
+  position: relative;
+  padding-right: 2px;
+  margin-right: 20px;
+}
+.big-card a::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  aspect-ratio: 1;
+  right: -20px;
+  top: 0;
+  background-image: url(../../media/external-link.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.big-card-btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--other);
+  border-radius: 0.2em;
+  padding: 0.2em 0.6em;
+  font-size: 1.5rem;
+}
