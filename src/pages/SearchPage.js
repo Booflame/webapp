@@ -5,6 +5,9 @@ import CategoryOne from "../components/Search/CategoryOne"
 import CategoryTwo from "../components/Search/CategoryTwo"
 import CategoryThree from "../components/Search/CategoryThree"
 import CategoryFour from "../components/Search/CategoryFour"
+import CategoryFive from "../components/Search/CategoryFive"
+import CategorySix from "../components/Search/CategorySix"
+
 
 /* Laura */
 
@@ -35,9 +38,9 @@ export default function SearchPage() {
             <div className="searchpage-subtitle" id="sport"><h2>Sportsaktiviteter</h2></div>
             <CategoryFour></CategoryFour>
             <div className="searchpage-subtitle" id="romantisk"><h2>Romantiske dates</h2></div>
-            <CategoryTwo></CategoryTwo>
+            <CategoryFive></CategoryFive>
             <div className="searchpage-subtitle" id="udendørs"><h2>Udendørsaktiviteter</h2></div>
-            <CategoryTwo></CategoryTwo>
+            <CategorySix></CategorySix>
             <div className="searchpage-subtitle" id="gratis"><h2>Intet budget? Intet problem</h2></div>
             <CategoryTwo></CategoryTwo>
             <div className="searchpage-subtitle" id="opskrifter"><h2>Lækre opskrifter</h2></div>
