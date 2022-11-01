@@ -12,6 +12,8 @@ import DatePage from './pages/DatePage';
 import ErrorPage from './pages/ErrorPage';
 import SearchPage from './pages/SearchPage';
 import OpretPage from './pages/OpretPage';
+import DateItem from './pages/DatePage';
+
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path='/error' element={<ErrorPage />} />
         <Route path='/search' element={<SearchPage />} />
         <Route path='/opret' element={<OpretPage />} />
+        <Route path="/home/:ItemId" element={<DateItem />} />
+
       </Routes>
     </>
   );
