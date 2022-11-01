@@ -1,4 +1,5 @@
 import parse from "html-react-parser";
+import { Link } from "react-router-dom";
 
 // Freja & Nichlas 
 export default function DateFullItem({ post }) {
@@ -16,6 +17,7 @@ export default function DateFullItem({ post }) {
                 <img src={image} alt={post.title.rendered}/>
                 <div>{parse(post.content.rendered)}</div>
             </article>
+            <Link className="big-card-btn" to={`/home`}>Afslut</Link>
         </>
     );
 }
