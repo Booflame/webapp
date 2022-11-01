@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import './BotNav.css';
 
+// Laura
 // nedenfor er BotNav konstrueret med ikoner der fungerer som NavLinks der tager brugeren til en underside som /home, /search, / og /profile
 export default function BotNav() {
     return (
