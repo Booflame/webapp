@@ -3,6 +3,8 @@ import Header from "../components/Header/Header"
 import "../components/Search/search.css"
 import CategoryOne from "../components/Search/CategoryOne"
 import CategoryTwo from "../components/Search/CategoryTwo"
+import CategoryThree from "../components/Search/CategoryThree"
+import CategoryFour from "../components/Search/CategoryFour"
 
 /* Laura */
 
@@ -29,9 +31,9 @@ export default function SearchPage() {
             <div className="searchpage-subtitle" id="selvforkælelse"><h2>Tid til selvforkælelse</h2></div>
             <CategoryTwo></CategoryTwo>
             <div className="searchpage-subtitle" id="fest"><h2>Ideer til fester</h2></div>
-            <CategoryTwo></CategoryTwo>
+            <CategoryThree></CategoryThree>
             <div className="searchpage-subtitle" id="sport"><h2>Sportsaktiviteter</h2></div>
-            <CategoryTwo></CategoryTwo>
+            <CategoryFour></CategoryFour>
             <div className="searchpage-subtitle" id="romantisk"><h2>Romantiske dates</h2></div>
             <CategoryTwo></CategoryTwo>
             <div className="searchpage-subtitle" id="udendørs"><h2>Udendørsaktiviteter</h2></div>
