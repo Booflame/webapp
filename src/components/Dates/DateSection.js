@@ -5,12 +5,15 @@ import './datecards.css'
 
 // Nichlas
 export default function DateSection() {
+    
     const [posts, setPosts] = useState([]);
     const location = useLocation();
+    
     // Her hentes datalisten fra json Wordpress
     useEffect(() => {
         async function getData() {
-            const res = await fetch("https://webappindhold.frejavangilst.com/wp-json/wp/v2/posts?_embed&per_page=100");
+            const url = "https://webappindhold.frejavangilst.com/wp-json/wp/v2/posts?_embed&per_page=100"
+            const res = await fetch(url);
             const data = await res.json();
 
             const filterWho = location.state.who.toLowerCase()
@@ -27,11 +30,9 @@ export default function DateSection() {
                 .filter(e => e.acf.time.includes(filterWhen))
                 .filter(e => e.acf.budget.includes(filterBudget))
 
-            console.log(data);
-            console.log(filterData);
-            setPosts(filterData);
+            setPosts(filterData)
         }
-        getData();
+        getData()
     }, [location]);
 
     const length = posts.length;

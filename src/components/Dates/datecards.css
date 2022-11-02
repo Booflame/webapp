@@ -18,6 +18,7 @@
 .slide.active + .slide {
   opacity: 1;
   transform: translateX(105%);
+  position: static;
 }
 .slide:not(.active) {
   transform: translateX(-105%);
@@ -167,5 +168,4 @@
   justify-content: center;
   margin-left: 2em;
   margin-right: 2em;
-
 }
